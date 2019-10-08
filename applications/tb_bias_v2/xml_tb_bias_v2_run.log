@@ -1,0 +1,118 @@
+Available containers are:  0: PCI:0000:03:00.0 [model: hdl os:  platform: mpcie], 1: rcc0 [model: rcc os: linux platform: centos7]
+Actual deployment is:
+  Instance  0 pattern_v2 (spec ocpi.assets.util_comps.pattern_v2) on hdl container 0: PCI:0000:03:00.0, using pattern_v2/a/pattern_v2 in /home/user/ocpi/bsp_epiq_sidekiq_mpcie/applications/tb_bias_v2/../../hdl/assemblies/tb_bias_v2/container-tb_bias_v2_mpcie_base/target-spartan6/tb_bias_v2_mpcie_base.bit.gz dated Tue Oct  8 14:37:50 2019
+  Instance  1 bias (spec ocpi.core.bias) on hdl container 0: PCI:0000:03:00.0, using bias/a/bias in /home/user/ocpi/bsp_epiq_sidekiq_mpcie/applications/tb_bias_v2/../../hdl/assemblies/tb_bias_v2/container-tb_bias_v2_mpcie_base/target-spartan6/tb_bias_v2_mpcie_base.bit.gz dated Tue Oct  8 14:37:50 2019
+  Instance  2 capture_v2 (spec ocpi.assets.util_comps.capture_v2) on hdl container 0: PCI:0000:03:00.0, using capture_v2/a/capture_v2 in /home/user/ocpi/bsp_epiq_sidekiq_mpcie/applications/tb_bias_v2/../../hdl/assemblies/tb_bias_v2/container-tb_bias_v2_mpcie_base/target-spartan6/tb_bias_v2_mpcie_base.bit.gz dated Tue Oct  8 14:37:50 2019
+Application XML parsed and deployments (containers and artifacts) chosen
+Checking existing loaded bitstream on OpenCPI HDL device "PCI:0000:03:00.0"...
+OpenCPI FPGA at PCI 0000:03:00.0: bitstream date Tue Jun 18 19:28:28 2019, platform "mpcie", part "xc6slx45t", UUID c6f6d9ca-9220-11e9-bdcb-e3c7a01ddb07
+Existing loaded bitstream looks ok, proceeding to snapshot the PCI configuration (into /tmp/ocpibitstream31887.1).
+The bitstream file "/home/user/ocpi/bsp_epiq_sidekiq_mpcie/applications/tb_bias_v2/../../hdl/assemblies/tb_bias_v2/container-tb_bias_v2_mpcie_base/target-spartan6/tb_bias_v2_mpcie_base.bit.gz" is compressed. Expanding to temp file "/tmp/ocpibitstream31887.bit".
+Loading bitstream
+SKIQ[31957]: <INFO> libsidekiq v4.4.0 (gdadc7321)
+SKIQ[31957]: <INFO> Need to perform full initialization
+SKIQ[31957]: <INFO> Performing initialization/detection of cards
+SKIQ[31957]: <INFO> Initialization/card detection completed successfully!
+SKIQ[31957]: <INFO> Preliminary initialization complete, continue full initialization
+store_user_fpga[31957]: <INFO> Sidekiq card 0 is serial number=30146, hardware MPCIE C (rev 2), product SKIQ-MPCIE-001 (mPCIe) (part ES004202-C0-00)
+store_user_fpga[31957]: <INFO> Sidekiq card 0 firmware v2.7
+store_user_fpga[31957]: <INFO> Sidekiq card 0 FPGA v0.0, (date 0, FIFO size unknown)
+store_user_fpga[31957]: <INFO> Sidekiq card 0 is configured for an external 40000000 Hz reference clock
+store_user_fpga[31957]: <DEBUG> erase flash sector 0x200000
+store_user_fpga[31957]: <DEBUG> erase flash sector 0x210000
+store_user_fpga[31957]: <DEBUG> erase flash sector 0x220000
+store_user_fpga[31957]: <DEBUG> erase flash sector 0x230000
+store_user_fpga[31957]: <DEBUG> erase flash sector 0x240000
+store_user_fpga[31957]: <DEBUG> erase flash sector 0x250000
+store_user_fpga[31957]: <DEBUG> erase flash sector 0x260000
+store_user_fpga[31957]: <DEBUG> erase flash sector 0x270000
+store_user_fpga[31957]: <DEBUG> erase flash sector 0x280000
+store_user_fpga[31957]: <DEBUG> erase flash sector 0x290000
+store_user_fpga[31957]: <DEBUG> erase flash sector 0x2a0000
+store_user_fpga[31957]: <DEBUG> erase flash sector 0x2b0000
+store_user_fpga[31957]: <DEBUG> erase flash sector 0x2c0000
+store_user_fpga[31957]: <DEBUG> erase flash sector 0x2d0000
+store_user_fpga[31957]: <DEBUG> erase flash sector 0x2e0000
+store_user_fpga[31957]: <DEBUG> erase flash sector 0x2f0000
+store_user_fpga[31957]: <DEBUG> erase flash sector 0x300000
+store_user_fpga[31957]: <DEBUG> erase flash sector 0x310000
+store_user_fpga[31957]: <DEBUG> erase flash sector 0x320000
+store_user_fpga[31957]: <DEBUG> erase flash sector 0x330000
+store_user_fpga[31957]: <DEBUG> erase flash sector 0x340000
+store_user_fpga[31957]: <DEBUG> erase flash sector 0x350000
+store_user_fpga[31957]: <DEBUG> erase flash sector 0x360000
+store_user_fpga[31957]: <DEBUG> write flash sector 0x200000
+store_user_fpga[31957]: <DEBUG> write flash sector 0x210000
+store_user_fpga[31957]: <DEBUG> write flash sector 0x220000
+store_user_fpga[31957]: <DEBUG> write flash sector 0x230000
+store_user_fpga[31957]: <DEBUG> write flash sector 0x240000
+store_user_fpga[31957]: <DEBUG> write flash sector 0x250000
+store_user_fpga[31957]: <DEBUG> write flash sector 0x260000
+store_user_fpga[31957]: <DEBUG> write flash sector 0x270000
+store_user_fpga[31957]: <DEBUG> write flash sector 0x280000
+store_user_fpga[31957]: <DEBUG> write flash sector 0x290000
+store_user_fpga[31957]: <DEBUG> write flash sector 0x2a0000
+store_user_fpga[31957]: <DEBUG> write flash sector 0x2b0000
+store_user_fpga[31957]: <DEBUG> write flash sector 0x2c0000
+store_user_fpga[31957]: <DEBUG> write flash sector 0x2d0000
+store_user_fpga[31957]: <DEBUG> write flash sector 0x2e0000
+store_user_fpga[31957]: <DEBUG> write flash sector 0x2f0000
+store_user_fpga[31957]: <DEBUG> write flash sector 0x300000
+store_user_fpga[31957]: <DEBUG> write flash sector 0x310000
+store_user_fpga[31957]: <DEBUG> write flash sector 0x320000
+store_user_fpga[31957]: <DEBUG> write flash sector 0x330000
+store_user_fpga[31957]: <DEBUG> write flash sector 0x340000
+store_user_fpga[31957]: <DEBUG> write flash sector 0x350000
+store_user_fpga[31957]: <DEBUG> write flash sector 0x360000
+store_user_fpga[31957]: <INFO> Sidekiq card 0 FPGA v0.0, (date 0, FIFO size unknown)
+store_user_fpga[31957]: <INFO> unlocking card 0
+Info: skiq_save_fpga_config_to_flash returned 0
+Info: reloading FPGA from flash
+Bitstream loaded successfully, proceeding to restore PCI config (from /tmp/ocpibitstream31887.1).
+OpenCPI FPGA at PCI 0000:03:00.0: bitstream date Tue Oct  8 14:26:26 2019, platform "mpcie", part "xc6slx45t", UUID 23e35aac-e9f9-11e9-9c6d-8bc5bc5e233b
+New bitstream is responding. The loading process was successful.
+Application established: containers, workers, connections all created
+Communication with the application established
+Dump of all initial property values:
+Property  0: pattern_v2.dataRepeat = "true" (cached)
+Property  1: pattern_v2.numMessagesMax = "0x5" (parameter)
+Property  2: pattern_v2.messagesToSend = "0x5"
+Property  3: pattern_v2.messagesSent = "0x0"
+Property  4: pattern_v2.dataSent = "0x0"
+Property  5: pattern_v2.numDataWords = "0xf" (parameter)
+Property  6: pattern_v2.numMessageFields = "0x2" (parameter)
+Property  7: pattern_v2.messages = "{0x4,0xfb},{0x8,0xfc},{0xc,0xfd},{0x10,0xfe},{0x14,0xff}" (cached)
+Property  8: pattern_v2.data = "0x0,0x1,0x2,0x3,0x4,0x5,0x6,0x7,0x8,0x9,0xa,0xb,0xc,0xd,0xe" (cached)
+Property  9: pattern_v2.ocpi_debug = "false" (parameter)
+Property 10: pattern_v2.ocpi_endian = "little" (parameter)
+Property 18: bias.biasValue = "0x1020304" (cached)
+Property 19: bias.ocpi_debug = "false" (parameter)
+Property 20: bias.ocpi_endian = "little" (parameter)
+Property 30: capture_v2.stopOnFull = "true" (cached)
+Property 31: capture_v2.metadataCount = "0x0"
+Property 32: capture_v2.dataCount = "0x0"
+Property 33: capture_v2.numRecords = "0x100" (parameter)
+Property 34: capture_v2.numDataWords = "0x400" (parameter)
+Property 35: capture_v2.numMetadataWords = "0x4" (parameter)
+Property 36: capture_v2.metaFull = "false"
+Property 37: capture_v2.dataFull = "false"
+Property 38: capture_v2.stopZLMOpcode = "0x0" (cached)
+Property 39: capture_v2.stopOnZLM = "false" (cached)
+Property 40: capture_v2.stopOnEOF = "true" (cached)
+Property 41: capture_v2.metadata = "{0x0}"
+Property 42: capture_v2.data = "0x0"
+Property 43: capture_v2.ocpi_debug = "false" (parameter)
+Property 44: capture_v2.ocpi_endian = "little" (parameter)
+Application started/running
+Waiting for application to finish (no time limit)
+Application finished
+Dump of all final property values:
+Property  2: pattern_v2.messagesToSend = "0x0"
+Property  3: pattern_v2.messagesSent = "0x6"
+Property  4: pattern_v2.dataSent = "0xf"
+Property 31: capture_v2.metadataCount = "0x6"
+Property 32: capture_v2.dataCount = "0xf"
+Property 36: capture_v2.metaFull = "false"
+Property 37: capture_v2.dataFull = "false"
+Property 41: capture_v2.metadata = "{0xfb000004,0x604e2bf2,0x604e2bf2,0x1},{0xfc000008,0x604e2c9e,0x604e2c73,0x1},{0xfd00000c,0x604e2d49,0x604e2cf3,0x1},{0xfe000010,0x604e2e20,0x604e2d9f,0x1},{0xff000014,0x604e2f22,0x604e2e76,0x1},{0x0,0x604e2f4d,0x604e2f4d,0x1},{0x0}"
+Property 42: capture_v2.data = "0x1020304,0x1020304,0x1020305,0x1020304,0x1020305,0x1020306,0x1020304,0x1020305,0x1020306,0x1020307,0x1020304,0x1020305,0x1020306,0x1020307,0x1020308,0x0"

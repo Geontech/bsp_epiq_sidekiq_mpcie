@@ -1,0 +1,14 @@
+#
+# Created an OCPI HDL primitive libray by copying 
+# /opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_sys_reset_v3_00_a
+# into a hdl/primitives/proc_sys_reset_v3_00_a/
+#
+
+OnlyTargets=spartan6 isim xsim
+#SourceFiles=\
+	upcnt_n.vhd \
+	lpf.vhd \
+	sequence.vhd \
+	proc_sys_reset.vhd
+
+include $(OCPI_CDK_DIR)/include/hdl/hdl-lib.mk

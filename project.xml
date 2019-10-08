@@ -1,0 +1,26 @@
+<project name="com.geontech.bsp.epiq_sidekiq_mpcie">
+  <hdl>
+    <assemblies>
+      <assembly name="testbias" />
+      <assembly name="tb_bias_v2" />
+      <assembly name="pattern_v2_only" />
+      <assembly name="capture_v2_only" />
+      <assembly name="bias_capture_v2" />
+    </assemblies>
+    <primitives>
+      <primitive name="axi_pcie_v1_09_a" />
+      <primitive name="proc_common_v3_00_a" />
+      <primitive name="axi_pcie_wrapper" />
+      <primitive name="proc_sys_reset_v3_00_a" />
+    </primitives>
+    <platforms>
+      <platform name="mpcie" />
+    </platforms>
+  </hdl>
+  <rcc />
+  <applications>
+    <application name="tb_bias_v2">
+      <built target="N/A" />
+    </application>
+  </applications>
+</project>

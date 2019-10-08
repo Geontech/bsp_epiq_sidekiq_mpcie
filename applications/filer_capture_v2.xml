@@ -1,0 +1,40 @@
+<!--<application package='ocpi.core' done='capture_v2'>-->
+<application package='ocpi.core'>
+<!--<application package='ocpi.core'>-->
+<!--  <instance component="file_read" connect="capture_v2">
+    <property name='filename' value='test.input' />
+    <property name='messagesInFile' value='false' />
+    <property name='opcode' value='0' />
+    <property name='repeat' value='1' />
+    <property name='messageSize' value='8'/>
+    <property name='granularity' value='4'/>
+  </instance>
+  <instance component="ocpi.assets.util_comps.capture_v2" model="hdl">
+    <property name='stopOnFull' value='false'/>
+    <property name='numRecords' value='256'/>
+    <property name='numDataWords' value='1024'/>
+  </instance>
+-->
+
+  <!--
+      <Connection>
+      <Port Instance="file_read" Name="out" Buffersize="8192" Buffercount="4"/>
+      <Port Instance="capture_v2" Name="in"/>
+      </Connection>
+  -->
+
+  <instance component="file_read" connect="capture_v2">
+    <property name='filename' value='test.input'/>
+<!--    <property name='messagesInFile' value='false'/>
+    <property name='opcode' value='0'/>
+    <property name='repeat' value='1'/>
+    <property name='messageSize' value='4'/>
+    <property name='granularity' value='4'/>-->
+  </instance>
+  <instance component="ocpi.assets.util_comps.capture_v2">
+  <property name='stopOnFull' value='true'/>
+<!--  <property name='numRecords' value='256'/>
+  <property name='numDataWords' value='1024'/>-->
+  </instance>
+
+</application>

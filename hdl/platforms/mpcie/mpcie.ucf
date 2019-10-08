@@ -1,0 +1,145 @@
+###############################################################################
+# Extracted from the Epiq Solutions/sidekiq_pdk_v3.5/sidekiq.ucf
+###############################################################################
+# Define Device, Package And Speed Grade
+###############################################################################
+CONFIG PART = XC6SLX45T-CSG324-3 ;
+############################################################################
+# Clock constraints                                                        #
+############################################################################
+#NET "*pfconfig_cp_out*_clk" TNM_NET = clk_fpga_0;
+#TIMESPEC TS_clk_fpga_0 = PERIOD "clk_fpga_0" 100000 KHz;
+
+NET aux_clk     LOC = K4;
+NET aux_clk TNM_NET = aux_clk;
+TIMESPEC TS_aux_clk = PERIOD aux_clk 40 MHz HIGH 50 % ;
+
+#NET ref_40mhz     LOC = H17;
+#NET ref_40mhz TNM_NET = ref_40mhz;
+#TIMESPEC TS_ref_40mhz = PERIOD ref_40mhz 40 MHz HIGH 50 % ;
+
+NET perst_n	 LOC = F12;
+NET sys_clkn	 LOC = A8; #Sidekiq pcie_clk_n
+NET sys_clkp	 LOC = B8; #Sidekiq pcie_clk_p
+
+# These are not listed in the Sidekiq MiniPCIe ref_design.
+# Assignments came from Xilinx UG654
+NET pcie_rxn 	LOC = C5;
+NET pcie_rxp	LOC = D5;
+NET pcie_txn	LOC = A4;
+NET pcie_txp	LOC = B4;
+
+# PCIe Lane 0
+INST ftop/pfconfig_i/mpcie_i/worker/bridge/axi_pcie_bridge/comp_axi_enhanced_pcie/comp_enhanced_core_top_wrap/axi_pcie_enhanced_core_top_i/s6_pcie_v2_2_ep_inst/GT_i/tile0_gtpa1_dual_wrapper_i/gtpa1_dual_i LOC = GTPA1_DUAL_X0Y0;
+
+NET ftop/pfconfig_i/mpcie_i/worker/bridge/axi_pcie_bridge/comp_axi_enhanced_pcie/comp_enhanced_core_top_wrap/axi_pcie_enhanced_core_top_i/s6_pcie_v2_2_ep_inst/gt_refclk_out(0) TNM = GT_REFCLK_OUT;
+NET ftop/pfconfig_i/mpcie_i/worker/bridge/axi_pcie_bridge/comp_axi_enhanced_pcie/comp_enhanced_core_top_wrap/axi_pcie_enhanced_core_top_i/s6_pcie_v2_2_ep_inst/gt_refclk_out(0) TNM = GT_REFCLK_OUT_TIG;
+TIMESPEC TS_GT_REFCLK_OUT = PERIOD GT_REFCLK_OUT 10ns HIGH 50 % ;
+
+############################################################################
+# I/O STANDARDS and Location Constraints                                   #
+############################################################################
+NET led			LOC = H1;
+
+# Time Server
+NET ppsExtIn		LOC = U18;
+ 
+#NET rx_frame_p		LOC = U10;
+#NET rx_frame_n    	LOC = V10;
+#NET tx_frame_p    	LOC = T9;
+#NET tx_frame_n    	LOC = V9;
+
+#NET rx_data_p[0]     LOC = M11;
+#NET rx_data_n[0]     LOC = N11;
+#NET rx_data_p[1]     LOC = N10;
+#NET rx_data_n[1]     LOC = P11;
+#NET rx_data_p[2]     LOC = R11;
+#NET rx_data_n[2]     LOC = T11;
+#NET rx_data_p[3]     LOC = U15;
+#NET rx_data_n[3]     LOC = V15;
+#NET rx_data_p[4]     LOC = T12;
+#NET rx_data_n[4]     LOC = V12;
+#NET rx_data_p[5]     LOC = U11;
+#NET rx_data_n[5]     LOC = V11;
+
+#NET tx_data_p[0]     LOC = R7; #T6
+#NET tx_data_n[0]     LOC = T7; #V6
+#NET tx_data_p[1]     LOC = M8;
+#NET tx_data_n[1]     LOC = N8;
+#NET tx_data_p[2]     LOC = T6; #N7
+#NET tx_data_n[2]     LOC = V6; #P7
+#NET tx_data_p[3]     LOC = N6;
+#NET tx_data_n[3]     LOC = P7;
+#NET tx_data_p[4]     LOC = N5;
+#NET tx_data_n[4]     LOC = P6;
+#NET tx_data_p[5]     LOC = N7; #R7
+#NET tx_data_n[5]     LOC = P8; #T7;
+#NET RF_BAND_0[0]     LOC = P2;
+#NET RF_BAND_0[1]     LOC = P1;
+#NET RF_BAND_0[2]     LOC = T2;
+#NET RF_BAND_1[0]     LOC = M3;
+#NET RF_BAND_1[1]     LOC = M1;
+#NET RF_BAND_1[2]     LOC = L2;
+#NET lna_en           LOC = T4;
+#NET rf_tx_en         LOC = V4;
+#NET rf_rst_n         LOC = V16;
+NET gpio_expander     LOC = P3;
+
+#NET rf_band_0_ov     LOC = T1 |PULLUP;
+#NET rf_band_1_ov     LOC = L1 |PULLUP;
+#NET rf_txband[0]     LOC = K2;
+#NET rf_txband[1]     LOC = K1;
+#NET rf_txband[2]     LOC = J1;
+
+#NET hardware_rev[0]  LOC = C1 |PULLUP;
+#NET hardware_rev[1]  LOC = C2 |PULLUP;
+#NET hardware_rev[2]  LOC = D3 |PULLUP;
+
+#NET adc_dig_bus_a[0] LOC = K12;
+#NET adc_dig_bus_a[1] LOC = K13;
+#NET adc_dig_bus_a[2] LOC = K14;
+#NET adc_dig_bus_a[3] LOC = H14;
+#NET adc_dig_bus_a[4] LOC = H15;
+#NET adc_dig_bus_a[5] LOC = H16;
+#NET adc_dig_bus_a[6] LOC = M14;
+#NET adc_dig_bus_a[7] LOC = N14;
+###############################################################################
+# Physical Constraints
+###############################################################################
+#
+# BUFIO and PLL locations are dictated by the transceiver placement.
+# These constraints ensure the clocking elements are located
+# correctly.
+#
+#INST *gt_refclk_bufio2	LOC = BUFIO2_X2Y28;
+#INST core/pll_base_i	LOC = PLL_ADV_X0Y3;
+###############################################################################
+# Timing Constraints
+###############################################################################
+## NET "*metadata_minusone*" TPTHRU = "tx_ms";
+## TIMESPEC "TS_tx_ms" = FROM FFS(*) THRU tx_ms TO FFS(*) 20 ns;
+#INST "*tx_data*" TPTHRU = "txfifo_ms";
+#TIMESPEC "TS_txfifo_ms" = FROM FFS(*) THRU txfifo_ms TO FFS(*) 8 ns;
+#TIMESPEC "TS_txfifo_msr" = FROM RAMS(*) THRU txfifo_ms TO RAMS(*) 8 ns;
+## INST "*tx_metadata*" TPTHRU = "txmetafifo_ms";
+## TIMESPEC "TS_txmetafifo_ms" = FROM FFS(*) THRU txmetafifo_ms TO FFS(*) 8 ns;
+## TIMESPEC "TS_txmetafifo_msr" = FROM RAMS(*) THRU txmetafifo_ms TO RAMS(*) 8 ns;
+#
+# Ignore timing on asynchronous signals.
+#
+#NET perst_n TIG;
+
+#NET *xil_pcie_wrapper/s6_pcie/gt_refclk_out(0) TNM = GT_REFCLK_OUT;
+#NET *xil_pcie_wrapper/s6_pcie/gt_refclk_out(0) TNM = GT_REFCLK_OUT_TIG;
+#TIMESPEC TS_GT_REFCLK_OUT = PERIOD GT_REFCLK_OUT 10ns HIGH 50 % ;
+
+##NET user_clk_0 TNM = USER_CLK_0;
+#TIMESPEC "TS_tig_userclock" = FROM "if_clk_prebuf" TO "xil_pcie_wrapper_s6_pcie_clk_62_5" TIG;
+#TIMESPEC "TS_tig_userclock_2" = FROM "xil_pcie_wrapper_s6_pcie_clk_62_5" TO "if_clk_prebuf" TIG;
+
+#NET "adc_if_blk_*/*_sample_*_d*" MAXDELAY = 1.0 ns;   # only bits 0-5 probably need this constraint
+#NET "adc_if_blk_*/frame_d" MAXDELAY = 2.5 ns;         # to account for max sample rate
+###############################################################################
+# End
+###############################################################################
+#Config ENABLE_SUSPEND = "FILTERED" ;

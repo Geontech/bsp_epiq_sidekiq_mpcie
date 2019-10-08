@@ -1,0 +1,10 @@
+Libraries=axi sdp proc_sys_reset_v3_00_a proc_common_v3_00_a axi_pcie_v1_09_a axi_pcie_wrapper
+
+SourceFiles=mpcie.vhd
+
+Configurations=\
+	base \
+
+ExportFiles=mpcie.ucf mpcie.mk mpcie.ut 
+
+include $(OCPI_CDK_DIR)/include/hdl/hdl-platform.mk

@@ -1,0 +1,78 @@
+<!-- Sidekiq/MiniPCIe Platform Worker -->
+<HdlPlatform Language="VHDL" spec='platform-spec'>
+  <specproperty name='platform' value='mpcie'/>
+  <!-- All platform workers must provide these two ports -->
+  <metadata master='true'/> <!-- access to container metadata via the platform worker -->
+  <timebase master='true'/> <!-- providing a timebase for the time service -->
+  <!-- This platform worker provides a control plane -->
+  <cpmaster master='true'/>
+  <!-- Declare and parameterize the time_server device worker for this platform -->
+  <device worker='time_server'>
+    <property name='frequency' value='100e6'/>
+  </device>
+
+  <!-- EVENTUALLY, either there will be a more generic sdp implementation, than just 'zynq'-->
+  <!-- Prevent inclusion of Data Plane, until Control Plane is working -->
+  <sdp name="mpcie" master='true' count='1'/>
+
+  <property name="axi_error" type="bool" volatile='true'/>
+  <property name="sdpDropCount" type='uchar' volatile='true'/>
+  <!-- debug stuff -->
+  <property name="debug_state" type="Ulonglong" volatile='true' debug='false'/>
+  <property name="debug_state1" type="Ulonglong" volatile='true' debug='false'/>
+  <property name="debug_state2" type="Ulonglong" volatile='true' debug='false'/>
+  <property name='maxtrace' type='uchar' parameter='1' default='40'/>
+  <property name="sdp_headers_in" type="Ulonglong" arraylength='maxtrace' volatile='true' debug='false'/>
+  <property name="sdp_data_in" type="Ulong" arraylength='maxtrace' volatile='true' debug='false'/>
+  <property name="sdp_headers_out" type="Ulonglong" arraylength='maxtrace' volatile='true' debug='false'/>
+  <property name="sdp_data_out" type="Ulonglong" arraylength='maxtrace' volatile='true' debug='false'/>
+  <property name="sdp_out_status" arraylength='maxtrace' volatile='true' debug='false'/>
+  <property name="sdp_header_count_in" volatile='true' debug='false'/>
+  <property name="sdp_header_count_out" volatile='true' debug='false'/>
+  <property name="sdp_count_in" volatile='true' writable='1' debug='false'/>
+  <property name="sdp_count_out" volatile='true' writable='1' debug='false'/>
+  <property name="axi_cacount" volatile='true' writable='1'  debug='false'/>
+  <property name="axi_cdcount" volatile='true' writable='1' debug='false'/>
+  <property name="axi_caddr" type="Ulonglong" arraylength='maxtrace' volatile='true' debug='false'/>
+  <property name="axi_cdata" type="Ulonglong" arraylength='maxtrace' volatile='true' debug='false'/>
+  <property name="axi_racount" volatile='true' writable='1' debug='false'/>
+  <property name="axi_raddr" type="Ulonglong" arraylength='maxtrace' volatile='true' debug='false'/>
+  <property name="axi_rdcount" volatile='true' writable='1' debug='false'/>
+  <property name="axi_rdata" type="Ulonglong" arraylength='maxtrace' volatile='true' debug='false'/>
+  <property name="axi_wacount" volatile='true' writable='1' debug='false'/>
+  <property name="axi_waddr" type="Ulonglong" arraylength='maxtrace' volatile='true' debug='false'/>
+  <property name="axi_wdcount" volatile='true' writable='1' debug='false'/>
+  <property name="axi_wdata" type="Ulonglong" arraylength='maxtrace' volatile='true' debug='false'/>
+
+<!-- REQUIREMENT: 
+       - At least one signal assignment must be made, otherwise the follow errror would be observed:
+       For assy_{name} on {platform} using config base: creating NGD (Xilinx Native Generic Database) 
+       file using "ngdbuild". Details in ngdbuild.out ERROR:ConstraintSystem:58 - Constraint 
+       <NET "*pfconfig_cp_out*_clk" TNM_NET =ERROR:NgdBuild:605 - logical root block 
+	    'assy_{name}_{platform}_base' with type  Number of errors:     2
+-->
+  <signal  output='led'/>
+  <signal  output='gpio_expander'/>
+
+  <signal input='aux_clk'/> <!--40 MHz low precision always-on clock-->
+<!--  <signal input='ref_40mhz'/>--> <!--40 MHz ref-->
+  <signal input='perst_n'/>
+  <signal input='sys_clk' differential='true'/>
+  <signal input='pcie_rx' differential='true' width='1'/>
+  <signal output='pcie_tx' differential='true' width='1'/>
+  <signal input='ppsExtIn'/>
+
+ <!-- TODO: ADD AD9361 device workers here -->
+<!--
+  <device worker='ad9361_dac'/>
+  <device worker='ad9361_adc'/>
+  <device worker='ad9361_tx'/>
+  <device worker='ad9361_rx'/>
+  <device worker='ad9361_spi'/>
+-->
+<!-- 
+  <device worker='accelerometer_p/n'/>
+  <device worker='temperature_senor_p/n'/>
+  <device worker='gpio'/>
+-->
+</HdlPlatform>

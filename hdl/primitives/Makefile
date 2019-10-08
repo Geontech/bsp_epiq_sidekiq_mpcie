@@ -1,0 +1,11 @@
+#ImportCoreDirs=\
+#  $(OCPI_HDL_IMPORTS_DIR)/coregen/proc_common_v3_00_a \
+#  $(OCPI_HDL_IMPORTS_DIR)/coregen/axi_pcie_v1_09_a \
+
+# These are order-sensitive
+PrimitiveLibraries=proc_sys_reset_v3_00_a proc_common_v3_00_a axi_pcie_v1_09_a axi_pcie_wrapper
+
+# All cores here are imported
+PrimitiveCores=
+
+include $(OCPI_CDK_DIR)/include/hdl/hdl-primitives.mk

@@ -1,0 +1,7 @@
+
+export OCPI_LIBRARY_PATH=../artifacts:../imports
+
+ocpirun -v -d -t 1 bias_capture_v2.xml
+ocpirun -v -d -t 1 filer_capture_v2.xml
+ocpirun -v -d -t 1 pattern_v2_filew.xml
+ocpirun -v -d -t 1 testbias.xml

@@ -1,0 +1,475 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f0a29c16134, pid=15079, tid=139679701657344
+#
+# JRE version: 6.0_21-b06
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (17.0-b16 mixed mode linux-amd64 )
+# Problematic frame:
+# V  [libjvm.so+0x5c3134]
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007f0a24211000):  JavaThread "AWT-EventQueue-0" [_thread_in_vm, id=15096, stack(0x00007f09b5ffe000,0x00007f09b6fff000)]
+
+siginfo:si_signo=SIGSEGV: si_errno=0, si_code=1 (SEGV_MAPERR), si_addr=0x0000000100000010
+
+Registers:
+RAX=0x00007f09c8004040, RBX=0x0000000100000000, RCX=0x00007f0a24211000, RDX=0x0000000000000010
+RSP=0x00007f09b6ffc440, RBP=0x00007f09b6ffc4a0, RSI=0x0000000000000001, RDI=0x00007f0a2421da01
+R8 =0x00007f0a29f8e430, R9 =0x00007f09c8004040, R10=0x00007f09fbba60b8, R11=0x00007f0a29f8e430
+R12=0x00007f09fbba60b8, R13=0x00007f09b6ffc4d8, R14=0x000000000000001a, R15=0x00007f0a24211000
+RIP=0x00007f0a29c16134, EFL=0x0000000000010246, CSGSFS=0x0000000000000033, ERR=0x0000000000000004
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007f09b6ffc440)
+0x00007f09b6ffc440:   00007f09c8004030 00007f09c8004028
+0x00007f09b6ffc450:   0000001ac8004020 00007f09c8004038
+0x00007f09b6ffc460:   00007f09b6ffc480 00007f0a29c2a0d8
+0x00007f09b6ffc470:   00007f09c8004040 00007f09fb521428
+0x00007f09b6ffc480:   00007f0a24211000 00007f09b6ffc4d8
+0x00007f09b6ffc490:   000000000000001a 00007f0a242111a8
+0x00007f09b6ffc4a0:   00007f09b6ffc580 00007f0a29a31048
+0x00007f09b6ffc4b0:   00007f09b6ffc4d8 00007f09b6ffc500
+0x00007f09b6ffc4c0:   00007f09fbf19c50 00007f09fbba6408
+0x00007f09b6ffc4d0:   00007f09b6ffc590 00007f09c8004038
+0x00007f09b6ffc4e0:   00007f09c8004030 00007f09c8004028
+0x00007f09b6ffc4f0:   00007f09c8004020 00007f09c8004018
+0x00007f09b6ffc500:   00007f09b6ffc598 00007f0a20893624
+0x00007f09b6ffc510:   00007f0a20889d90 00007f0a00000000
+0x00007f09b6ffc520:   00007f09b6ffc5d8 00007f09b6ffc598
+0x00007f09b6ffc530:   00007f0a24211000 00007f0a29cba12a
+0x00007f09b6ffc540:   00007f0a24211000 00007f09fbf19c50
+0x00007f09b6ffc550:   00007f09b6ffc560 00007f0a20893600
+0x00007f09b6ffc560:   00007f09fbf19c50 00007f09fbba6072
+0x00007f09b6ffc570:   00007f09b6ffc610 00007f0a24211000
+0x00007f09b6ffc580:   00007f09b6ffc5d8 00007f0a20893666
+0x00007f09b6ffc590:   00007f0a20893624 00007f09b6ffc598
+0x00007f09b6ffc5a0:   00007f09fbba6072 00007f09b6ffc610
+0x00007f09b6ffc5b0:   00007f09fbba6f80 0000000000000000
+0x00007f09b6ffc5c0:   00007f09fbba60b8 0000000000000000
+0x00007f09b6ffc5d0:   00007f09b6ffc600 00007f09b6ffc658
+0x00007f09b6ffc5e0:   00007f0a2088af1c 0000000000000000
+0x00007f09b6ffc5f0:   0000000000000000 0000000000000000
+0x00007f09b6ffc600:   00007f0a16659e68 00007f0a16659c10
+0x00007f09b6ffc610:   00007f0a1620f628 00007f09b6ffc618
+0x00007f09b6ffc620:   00007f09fbb956b2 00007f09b6ffc690
+0x00007f09b6ffc630:   00007f09fbb96458 0000000000000000 
+
+Instructions: (pc=0x00007f0a29c16134)
+0x00007f0a29c16124:   19 40 0f 94 c7 40 0f b6 f7 8d 14 b5 0c 00 00 00
+0x00007f0a29c16134:   8b 0c 1a 89 4d b0 49 8b 5c 24 18 48 85 db 0f 84 
+
+Stack: [0x00007f09b5ffe000,0x00007f09b6fff000],  sp=0x00007f09b6ffc440,  free space=3ff90000000000000018k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0x5c3134]
+V  [libjvm.so+0x3de048]
+j  sun.java2d.pipe.SpanShapeRenderer.fill(Lsun/java2d/SunGraphics2D;Ljava/awt/Shape;)V+26
+j  sun.java2d.pipe.PixelToShapeConverter.fillRect(Lsun/java2d/SunGraphics2D;IIII)V+18
+j  sun.java2d.pipe.ValidatePipe.fillRect(Lsun/java2d/SunGraphics2D;IIII)V+19
+j  sun.java2d.SunGraphics2D.fillRect(IIII)V+10
+j  javax.swing.plaf.metal.MetalUtils$GradientPainter.drawHorizontalGradient(Ljava/awt/Graphics2D;FFLjava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;II)V+46
+j  javax.swing.plaf.metal.MetalUtils$GradientPainter.paintToImage(Ljava/awt/Component;Ljava/awt/Image;Ljava/awt/Graphics;II[Ljava/lang/Object;)V+174
+j  sun.swing.CachedPainter.paint0(Ljava/awt/Component;Ljava/awt/Graphics;IIII[Ljava/lang/Object;)V+169
+j  sun.swing.CachedPainter.paint(Ljava/awt/Component;Ljava/awt/Graphics;IIII[Ljava/lang/Object;)V+42
+j  javax.swing.plaf.metal.MetalUtils$GradientPainter.paint(Ljava/awt/Component;Ljava/awt/Graphics2D;Ljava/util/List;IIIIZ)V+71
+j  javax.swing.plaf.metal.MetalUtils.drawGradient(Ljava/awt/Component;Ljava/awt/Graphics;Ljava/lang/String;IIIIZ)Z+54
+j  javax.swing.plaf.metal.MetalScrollBarUI.oceanPaintThumb(Ljava/awt/Graphics;Ljavax/swing/JComponent;Ljava/awt/Rectangle;)V+165
+j  javax.swing.plaf.metal.MetalScrollBarUI.paintThumb(Ljava/awt/Graphics;Ljavax/swing/JComponent;Ljava/awt/Rectangle;)V+18
+j  javax.swing.plaf.basic.BasicScrollBarUI.paint(Ljava/awt/Graphics;Ljavax/swing/JComponent;)V+30
+j  javax.swing.plaf.ComponentUI.update(Ljava/awt/Graphics;Ljavax/swing/JComponent;)V+32
+j  javax.swing.JComponent.paintComponent(Ljava/awt/Graphics;)V+26
+j  javax.swing.JComponent.paint(Ljava/awt/Graphics;)V+290
+j  javax.swing.JComponent.paintChildren(Ljava/awt/Graphics;)V+512
+j  javax.swing.JComponent.paint(Ljava/awt/Graphics;)V+322
+j  javax.swing.JComponent.paintToOffscreen(Ljava/awt/Graphics;IIIIII)V+41
+j  javax.swing.BufferStrategyPaintManager.paint(Ljavax/swing/JComponent;Ljavax/swing/JComponent;Ljava/awt/Graphics;IIII)Z+157
+j  javax.swing.RepaintManager.paint(Ljavax/swing/JComponent;Ljavax/swing/JComponent;Ljava/awt/Graphics;IIII)V+52
+j  javax.swing.JComponent._paintImmediately(IIII)V+679
+j  javax.swing.JComponent.paintImmediately(IIII)V+83
+j  javax.swing.RepaintManager.paintDirtyRegions(Ljava/util/Map;)V+193
+j  javax.swing.RepaintManager.paintDirtyRegions()V+46
+j  javax.swing.RepaintManager.seqPaintDirtyRegions()V+73
+j  javax.swing.SystemEventQueueUtilities$ComponentWorkRequest.run()V+36
+j  java.awt.event.InvocationEvent.dispatch()V+47
+j  java.awt.EventQueue.dispatchEvent(Ljava/awt/AWTEvent;)V+26
+j  java.awt.EventDispatchThread.pumpOneEventForFilters(I)Z+204
+j  java.awt.EventDispatchThread.pumpEventsForFilter(ILjava/awt/Conditional;Ljava/awt/EventFilter;)V+30
+j  java.awt.EventDispatchThread.pumpEventsForHierarchy(ILjava/awt/Conditional;Ljava/awt/Component;)V+11
+j  java.awt.EventDispatchThread.pumpEvents(ILjava/awt/Conditional;)V+4
+j  java.awt.EventDispatchThread.pumpEvents(Ljava/awt/Conditional;)V+3
+j  java.awt.EventDispatchThread.run()V+9
+v  ~StubRoutines::call_stub
+V  [libjvm.so+0x3e756d]
+V  [libjvm.so+0x5f6f59]
+V  [libjvm.so+0x3e6e39]
+V  [libjvm.so+0x3e6eeb]
+V  [libjvm.so+0x476387]
+V  [libjvm.so+0x6ee452]
+V  [libjvm.so+0x5f80df]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  sun.java2d.pipe.SpanShapeRenderer.fill(Lsun/java2d/SunGraphics2D;Ljava/awt/Shape;)V+26
+j  sun.java2d.pipe.PixelToShapeConverter.fillRect(Lsun/java2d/SunGraphics2D;IIII)V+18
+j  sun.java2d.pipe.ValidatePipe.fillRect(Lsun/java2d/SunGraphics2D;IIII)V+19
+j  sun.java2d.SunGraphics2D.fillRect(IIII)V+10
+j  javax.swing.plaf.metal.MetalUtils$GradientPainter.drawHorizontalGradient(Ljava/awt/Graphics2D;FFLjava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;II)V+46
+j  javax.swing.plaf.metal.MetalUtils$GradientPainter.paintToImage(Ljava/awt/Component;Ljava/awt/Image;Ljava/awt/Graphics;II[Ljava/lang/Object;)V+174
+j  sun.swing.CachedPainter.paint0(Ljava/awt/Component;Ljava/awt/Graphics;IIII[Ljava/lang/Object;)V+169
+j  sun.swing.CachedPainter.paint(Ljava/awt/Component;Ljava/awt/Graphics;IIII[Ljava/lang/Object;)V+42
+j  javax.swing.plaf.metal.MetalUtils$GradientPainter.paint(Ljava/awt/Component;Ljava/awt/Graphics2D;Ljava/util/List;IIIIZ)V+71
+j  javax.swing.plaf.metal.MetalUtils.drawGradient(Ljava/awt/Component;Ljava/awt/Graphics;Ljava/lang/String;IIIIZ)Z+54
+j  javax.swing.plaf.metal.MetalScrollBarUI.oceanPaintThumb(Ljava/awt/Graphics;Ljavax/swing/JComponent;Ljava/awt/Rectangle;)V+165
+j  javax.swing.plaf.metal.MetalScrollBarUI.paintThumb(Ljava/awt/Graphics;Ljavax/swing/JComponent;Ljava/awt/Rectangle;)V+18
+j  javax.swing.plaf.basic.BasicScrollBarUI.paint(Ljava/awt/Graphics;Ljavax/swing/JComponent;)V+30
+j  javax.swing.plaf.ComponentUI.update(Ljava/awt/Graphics;Ljavax/swing/JComponent;)V+32
+j  javax.swing.JComponent.paintComponent(Ljava/awt/Graphics;)V+26
+j  javax.swing.JComponent.paint(Ljava/awt/Graphics;)V+290
+j  javax.swing.JComponent.paintChildren(Ljava/awt/Graphics;)V+512
+j  javax.swing.JComponent.paint(Ljava/awt/Graphics;)V+322
+j  javax.swing.JComponent.paintToOffscreen(Ljava/awt/Graphics;IIIIII)V+41
+j  javax.swing.BufferStrategyPaintManager.paint(Ljavax/swing/JComponent;Ljavax/swing/JComponent;Ljava/awt/Graphics;IIII)Z+157
+j  javax.swing.RepaintManager.paint(Ljavax/swing/JComponent;Ljavax/swing/JComponent;Ljava/awt/Graphics;IIII)V+52
+j  javax.swing.JComponent._paintImmediately(IIII)V+679
+j  javax.swing.JComponent.paintImmediately(IIII)V+83
+j  javax.swing.RepaintManager.paintDirtyRegions(Ljava/util/Map;)V+193
+j  javax.swing.RepaintManager.paintDirtyRegions()V+46
+j  javax.swing.RepaintManager.seqPaintDirtyRegions()V+73
+j  javax.swing.SystemEventQueueUtilities$ComponentWorkRequest.run()V+36
+j  java.awt.event.InvocationEvent.dispatch()V+47
+j  java.awt.EventQueue.dispatchEvent(Ljava/awt/AWTEvent;)V+26
+j  java.awt.EventDispatchThread.pumpOneEventForFilters(I)Z+204
+j  java.awt.EventDispatchThread.pumpEventsForFilter(ILjava/awt/Conditional;Ljava/awt/EventFilter;)V+30
+j  java.awt.EventDispatchThread.pumpEventsForHierarchy(ILjava/awt/Conditional;Ljava/awt/Component;)V+11
+j  java.awt.EventDispatchThread.pumpEvents(ILjava/awt/Conditional;)V+4
+j  java.awt.EventDispatchThread.pumpEvents(Ljava/awt/Conditional;)V+3
+j  java.awt.EventDispatchThread.run()V+9
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x00007f09a80c3800 JavaThread "process reaper" daemon [_thread_in_native, id=15115, stack(0x00007f09a1ffe000,0x00007f09a2fff000)]
+  0x00007f09a4013800 JavaThread "Thread-1" [_thread_in_native, id=15114, stack(0x00007f09b4ffd000,0x00007f09b5ffe000)]
+  0x00007f09a4001800 JavaThread "TimerQueue" daemon [_thread_blocked, id=15098, stack(0x00007f09a2fff000,0x00007f09a4000000)]
+  0x00007f0a24007800 JavaThread "DestroyJavaVM" [_thread_blocked, id=15080, stack(0x00007f0a28351000,0x00007f0a29351000)]
+=>0x00007f0a24211000 JavaThread "AWT-EventQueue-0" [_thread_in_vm, id=15096, stack(0x00007f09b5ffe000,0x00007f09b6fff000)]
+  0x00007f0a24217000 JavaThread "AWT-Shutdown" [_thread_blocked, id=15095, stack(0x00007f09b6fff000,0x00007f09b8000000)]
+  0x00007f0a241b7000 JavaThread "AWT-XAWT" daemon [_thread_in_native, id=15094, stack(0x00007f09c4309000,0x00007f09c530a000)]
+  0x00007f0a24151800 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=15093, stack(0x00007f09c5a2e000,0x00007f09c6a2f000)]
+  0x00007f0a24090000 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=15091, stack(0x00007f09c6fff000,0x00007f09c8000000)]
+  0x00007f0a2408d800 JavaThread "CompilerThread1" daemon [_thread_blocked, id=15090, stack(0x00007f09f84aa000,0x00007f09f85aa000)]
+  0x00007f0a2408a800 JavaThread "CompilerThread0" daemon [_thread_in_native, id=15089, stack(0x00007f09f85ab000,0x00007f09f86ab000)]
+  0x00007f0a24088800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=15088, stack(0x00007f09d4ad5000,0x00007f09d5ad6000)]
+  0x00007f0a2406b800 JavaThread "Finalizer" daemon [_thread_blocked, id=15087, stack(0x00007f09f86ab000,0x00007f09f96ac000)]
+  0x00007f0a24069000 JavaThread "Reference Handler" daemon [_thread_blocked, id=15086, stack(0x00007f09f96ac000,0x00007f09fa6ad000)]
+
+Other Threads:
+  0x00007f0a24065000 VMThread [stack: 0x00007f09fa6ae000,0x00007f09fa7ae000] [id=15085]
+  0x00007f0a2409a800 WatcherThread [stack: 0x00007f09f83a9000,0x00007f09f84a9000] [id=15092]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ PSYoungGen      total 72768K, used 16246K [0x00007f0a15de0000, 0x00007f0a1af10000, 0x00007f0a20880000)
+  eden space 62400K, 26% used [0x00007f0a15de0000,0x00007f0a16dbd888,0x00007f0a19ad0000)
+  from space 10368K, 0% used [0x00007f0a1a4f0000,0x00007f0a1a4f0000,0x00007f0a1af10000)
+  to   space 10368K, 0% used [0x00007f0a19ad0000,0x00007f0a19ad0000,0x00007f0a1a4f0000)
+ PSOldGen        total 166400K, used 0K [0x00007f0a00880000, 0x00007f0a0ab00000, 0x00007f0a15de0000)
+  object space 166400K, 0% used [0x00007f0a00880000,0x00007f0a00880000,0x00007f0a0ab00000)
+ PSPermGen       total 21248K, used 17299K [0x00007f09fb480000, 0x00007f09fc940000, 0x00007f0a00880000)
+  object space 21248K, 81% used [0x00007f09fb480000,0x00007f09fc564f40,0x00007f09fc940000)
+
+Dynamic libraries:
+40000000-40009000 r-xp 00000000 fd:02 823332068                          /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/bin/java
+40108000-4010a000 rwxp 00008000 fd:02 823332068                          /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/bin/java
+40a68000-40a89000 rwxp 00000000 00:00 0                                  [heap]
+7f0994000000-7f0994021000 rwxp 00000000 00:00 0 
+7f0994021000-7f0998000000 ---p 00000000 00:00 0 
+7f0998000000-7f0998021000 rwxp 00000000 00:00 0 
+7f0998021000-7f099c000000 ---p 00000000 00:00 0 
+7f099c000000-7f099c021000 rwxp 00000000 00:00 0 
+7f099c021000-7f09a0000000 ---p 00000000 00:00 0 
+7f09a0ffd000-7f09a1000000 ---p 00000000 00:00 0 
+7f09a1000000-7f09a1ffe000 rwxp 00000000 00:00 0 
+7f09a1ffe000-7f09a2001000 ---p 00000000 00:00 0 
+7f09a2001000-7f09a2fff000 rwxp 00000000 00:00 0 
+7f09a2fff000-7f09a3002000 ---p 00000000 00:00 0 
+7f09a3002000-7f09a4000000 rwxp 00000000 00:00 0 
+7f09a4000000-7f09a4081000 rwxp 00000000 00:00 0 
+7f09a4081000-7f09a8000000 ---p 00000000 00:00 0 
+7f09a8000000-7f09a80ce000 rwxp 00000000 00:00 0 
+7f09a80ce000-7f09ac000000 ---p 00000000 00:00 0 
+7f09ac000000-7f09ac021000 rwxp 00000000 00:00 0 
+7f09ac021000-7f09b0000000 ---p 00000000 00:00 0 
+7f09b0000000-7f09b0021000 rwxp 00000000 00:00 0 
+7f09b0021000-7f09b4000000 ---p 00000000 00:00 0 
+7f09b4ffd000-7f09b5000000 ---p 00000000 00:00 0 
+7f09b5000000-7f09b5ffe000 rwxp 00000000 00:00 0 
+7f09b5ffe000-7f09b6001000 ---p 00000000 00:00 0 
+7f09b6001000-7f09b6fff000 rwxp 00000000 00:00 0 
+7f09b6fff000-7f09b7002000 ---p 00000000 00:00 0 
+7f09b7002000-7f09b8000000 rwxp 00000000 00:00 0 
+7f09b8000000-7f09b8021000 rwxp 00000000 00:00 0 
+7f09b8021000-7f09bc000000 ---p 00000000 00:00 0 
+7f09bc000000-7f09bc021000 rwxp 00000000 00:00 0 
+7f09bc021000-7f09c0000000 ---p 00000000 00:00 0 
+7f09c0000000-7f09c0021000 rwxp 00000000 00:00 0 
+7f09c0021000-7f09c4000000 ---p 00000000 00:00 0 
+7f09c41d9000-7f09c41ef000 r-xp 00000000 fd:02 275957502                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libdcpr.so
+7f09c41ef000-7f09c42f1000 ---p 00016000 fd:02 275957502                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libdcpr.so
+7f09c42f1000-7f09c4309000 rwxp 00018000 fd:02 275957502                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libdcpr.so
+7f09c4309000-7f09c430c000 ---p 00000000 00:00 0 
+7f09c430c000-7f09c530a000 rwxp 00000000 00:00 0 
+7f09c530a000-7f09c530f000 r-xp 00000000 fd:00 33587323                   /usr/lib64/libXfixes.so.3.1.0
+7f09c530f000-7f09c550e000 ---p 00005000 fd:00 33587323                   /usr/lib64/libXfixes.so.3.1.0
+7f09c550e000-7f09c550f000 r-xp 00004000 fd:00 33587323                   /usr/lib64/libXfixes.so.3.1.0
+7f09c550f000-7f09c5510000 rwxp 00005000 fd:00 33587323                   /usr/lib64/libXfixes.so.3.1.0
+7f09c5510000-7f09c5519000 r-xp 00000000 fd:00 33587333                   /usr/lib64/libXrender.so.1.3.0
+7f09c5519000-7f09c5719000 ---p 00009000 fd:00 33587333                   /usr/lib64/libXrender.so.1.3.0
+7f09c5719000-7f09c571a000 r-xp 00009000 fd:00 33587333                   /usr/lib64/libXrender.so.1.3.0
+7f09c571a000-7f09c571b000 rwxp 0000a000 fd:00 33587333                   /usr/lib64/libXrender.so.1.3.0
+7f09c571b000-7f09c5724000 r-xp 00000000 fd:00 33586329                   /usr/lib64/libXcursor.so.1.0.2
+7f09c5724000-7f09c5924000 ---p 00009000 fd:00 33586329                   /usr/lib64/libXcursor.so.1.0.2
+7f09c5924000-7f09c5925000 r-xp 00009000 fd:00 33586329                   /usr/lib64/libXcursor.so.1.0.2
+7f09c5925000-7f09c5926000 rwxp 0000a000 fd:00 33586329                   /usr/lib64/libXcursor.so.1.0.2
+7f09c5926000-7f09c592d000 r-xp 00000000 fd:02 275959388                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libnio.so
+7f09c592d000-7f09c5a2c000 ---p 00007000 fd:02 275959388                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libnio.so
+7f09c5a2c000-7f09c5a2e000 rwxp 00006000 fd:02 275959388                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libnio.so
+7f09c5a2e000-7f09c5a31000 ---p 00000000 00:00 0 
+7f09c5a31000-7f09c6a2f000 rwxp 00000000 00:00 0 
+7f09c6a2f000-7f09c6aad000 r-xp 00000000 fd:02 273910661                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libfontmanager.so
+7f09c6aad000-7f09c6bac000 ---p 0007e000 fd:02 273910661                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libfontmanager.so
+7f09c6bac000-7f09c6bc2000 rwxp 0007d000 fd:02 273910661                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libfontmanager.so
+7f09c6bc2000-7f09c6bd3000 rwxp 00000000 00:00 0 
+7f09c6bd3000-7f09c6bd5000 r-xp 00000000 fd:00 33587258                   /usr/lib64/libXau.so.6.0.0
+7f09c6bd5000-7f09c6dd5000 ---p 00002000 fd:00 33587258                   /usr/lib64/libXau.so.6.0.0
+7f09c6dd5000-7f09c6dd6000 r-xp 00002000 fd:00 33587258                   /usr/lib64/libXau.so.6.0.0
+7f09c6dd6000-7f09c6dd7000 rwxp 00003000 fd:00 33587258                   /usr/lib64/libXau.so.6.0.0
+7f09c6dd7000-7f09c6dfe000 r-xp 00000000 fd:00 33587304                   /usr/lib64/libxcb.so.1.1.0
+7f09c6dfe000-7f09c6ffd000 ---p 00027000 fd:00 33587304                   /usr/lib64/libxcb.so.1.1.0
+7f09c6ffd000-7f09c6ffe000 r-xp 00026000 fd:00 33587304                   /usr/lib64/libxcb.so.1.1.0
+7f09c6ffe000-7f09c6fff000 rwxp 00027000 fd:00 33587304                   /usr/lib64/libxcb.so.1.1.0
+7f09c6fff000-7f09c7002000 ---p 00000000 00:00 0 
+7f09c7002000-7f09c8000000 rwxp 00000000 00:00 0 
+7f09c8000000-7f09c81ba000 rwxp 00000000 00:00 0 
+7f09c81ba000-7f09cc000000 ---p 00000000 00:00 0 
+7f09cc000000-7f09cc149000 rwxp 00000000 00:00 0 
+7f09cc149000-7f09d0000000 ---p 00000000 00:00 0 
+7f09d0000000-7f09d0021000 rwxp 00000000 00:00 0 
+7f09d0021000-7f09d4000000 ---p 00000000 00:00 0 
+7f09d4009000-7f09d4027000 r-xs 00166000 fd:02 821259074                  /home/user/Xilinx/14.7/ISE_DS/ISE/bin/java/chipscope/jide-grids.jar
+7f09d4027000-7f09d4058000 rwxp 00000000 00:00 0 
+7f09d4058000-7f09d406b000 r-xp 00000000 fd:02 275959387                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libnet.so
+7f09d406b000-7f09d416c000 ---p 00013000 fd:02 275959387                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libnet.so
+7f09d416c000-7f09d416f000 rwxp 00014000 fd:02 275959387                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libnet.so
+7f09d416f000-7f09d417e000 r-xp 00000000 fd:00 33587327                   /usr/lib64/libXi.so.6.1.0
+7f09d417e000-7f09d437d000 ---p 0000f000 fd:00 33587327                   /usr/lib64/libXi.so.6.1.0
+7f09d437d000-7f09d437e000 r-xp 0000e000 fd:00 33587327                   /usr/lib64/libXi.so.6.1.0
+7f09d437e000-7f09d437f000 rwxp 0000f000 fd:00 33587327                   /usr/lib64/libXi.so.6.1.0
+7f09d437f000-7f09d4384000 r-xp 00000000 fd:00 33587337                   /usr/lib64/libXtst.so.6.1.0
+7f09d4384000-7f09d4583000 ---p 00005000 fd:00 33587337                   /usr/lib64/libXtst.so.6.1.0
+7f09d4583000-7f09d4584000 r-xp 00004000 fd:00 33587337                   /usr/lib64/libXtst.so.6.1.0
+7f09d4584000-7f09d4585000 rwxp 00005000 fd:00 33587337                   /usr/lib64/libXtst.so.6.1.0
+7f09d4585000-7f09d46bd000 r-xp 00000000 fd:00 33586254                   /usr/lib64/libX11.so.6.3.0
+7f09d46bd000-7f09d48bd000 ---p 00138000 fd:00 33586254                   /usr/lib64/libX11.so.6.3.0
+7f09d48bd000-7f09d48be000 r-xp 00138000 fd:00 33586254                   /usr/lib64/libX11.so.6.3.0
+7f09d48be000-7f09d48c3000 rwxp 00139000 fd:00 33586254                   /usr/lib64/libX11.so.6.3.0
+7f09d48c3000-7f09d48d4000 r-xp 00000000 fd:00 33587321                   /usr/lib64/libXext.so.6.4.0
+7f09d48d4000-7f09d4ad3000 ---p 00011000 fd:00 33587321                   /usr/lib64/libXext.so.6.4.0
+7f09d4ad3000-7f09d4ad4000 r-xp 00010000 fd:00 33587321                   /usr/lib64/libXext.so.6.4.0
+7f09d4ad4000-7f09d4ad5000 rwxp 00011000 fd:00 33587321                   /usr/lib64/libXext.so.6.4.0
+7f09d4ad5000-7f09d4ad8000 ---p 00000000 00:00 0 
+7f09d4ad8000-7f09d5ad6000 rwxp 00000000 00:00 0 
+7f09d5ad6000-7f09dc000000 r-xp 00000000 fd:00 100676586                  /usr/lib/locale/locale-archive
+7f09dc000000-7f09dc021000 rwxp 00000000 00:00 0 
+7f09dc021000-7f09e0000000 ---p 00000000 00:00 0 
+7f09e0000000-7f09e0021000 rwxp 00000000 00:00 0 
+7f09e0021000-7f09e4000000 ---p 00000000 00:00 0 
+7f09e4000000-7f09e4021000 rwxp 00000000 00:00 0 
+7f09e4021000-7f09e8000000 ---p 00000000 00:00 0 
+7f09e8000000-7f09e8021000 rwxp 00000000 00:00 0 
+7f09e8021000-7f09ec000000 ---p 00000000 00:00 0 
+7f09ec000000-7f09ec021000 rwxp 00000000 00:00 0 
+7f09ec021000-7f09f0000000 ---p 00000000 00:00 0 
+7f09f0000000-7f09f0021000 rwxp 00000000 00:00 0 
+7f09f0021000-7f09f4000000 ---p 00000000 00:00 0 
+7f09f4000000-7f09f4021000 rwxp 00000000 00:00 0 
+7f09f4021000-7f09f8000000 ---p 00000000 00:00 0 
+7f09f8007000-7f09f8023000 r-xs 0013b000 fd:02 821259073                  /home/user/Xilinx/14.7/ISE_DS/ISE/bin/java/chipscope/jide-common.jar
+7f09f8023000-7f09f8065000 r-xp 00000000 fd:02 824814424                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/xawt/libmawt.so
+7f09f8065000-7f09f8164000 ---p 00042000 fd:02 824814424                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/xawt/libmawt.so
+7f09f8164000-7f09f816f000 rwxp 00041000 fd:02 824814424                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/xawt/libmawt.so
+7f09f816f000-7f09f8171000 rwxp 00000000 00:00 0 
+7f09f8171000-7f09f8203000 r-xp 00000000 fd:02 275957488                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libawt.so
+7f09f8203000-7f09f8302000 ---p 00092000 fd:02 275957488                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libawt.so
+7f09f8302000-7f09f831b000 rwxp 00091000 fd:02 275957488                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libawt.so
+7f09f831b000-7f09f8340000 rwxp 00000000 00:00 0 
+7f09f8340000-7f09f83a8000 r-xs 00567000 fd:02 823676684                  /home/user/Xilinx/14.7/ISE_DS/ISE/bin/java/chipscope/chipscope.jar
+7f09f83a8000-7f09f83a9000 ---p 00000000 00:00 0 
+7f09f83a9000-7f09f84a9000 rwxp 00000000 00:00 0 
+7f09f84a9000-7f09f84ad000 ---p 00000000 00:00 0 
+7f09f84ad000-7f09f85aa000 rwxp 00000000 00:00 0 
+7f09f85aa000-7f09f85ae000 ---p 00000000 00:00 0 
+7f09f85ae000-7f09f86ab000 rwxp 00000000 00:00 0 
+7f09f86ab000-7f09f86ae000 ---p 00000000 00:00 0 
+7f09f86ae000-7f09f96ac000 rwxp 00000000 00:00 0 
+7f09f96ac000-7f09f96af000 ---p 00000000 00:00 0 
+7f09f96af000-7f09fa6ad000 rwxp 00000000 00:00 0 
+7f09fa6ad000-7f09fa6ae000 ---p 00000000 00:00 0 
+7f09fa6ae000-7f09face7000 rwxp 00000000 00:00 0 
+7f09face7000-7f09fae7e000 r-xs 02b02000 fd:02 823311030                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/rt.jar
+7f09fae7e000-7f09faea6000 rwxp 00000000 00:00 0 
+7f09faea6000-7f09faea7000 ---p 00000000 00:00 0 
+7f09faea7000-7f09fafa7000 rwxp 00000000 00:00 0 
+7f09fafa7000-7f09fafa8000 ---p 00000000 00:00 0 
+7f09fafa8000-7f09fb0a8000 rwxp 00000000 00:00 0 
+7f09fb0a8000-7f09fb0a9000 ---p 00000000 00:00 0 
+7f09fb0a9000-7f09fb1a9000 rwxp 00000000 00:00 0 
+7f09fb1a9000-7f09fb1aa000 ---p 00000000 00:00 0 
+7f09fb1aa000-7f09fb2fc000 rwxp 00000000 00:00 0 
+7f09fb2fc000-7f09fb355000 rwxp 00000000 00:00 0 
+7f09fb355000-7f09fb360000 rwxp 00000000 00:00 0 
+7f09fb360000-7f09fb37f000 rwxp 00000000 00:00 0 
+7f09fb37f000-7f09fb3d1000 rwxp 00000000 00:00 0 
+7f09fb3d1000-7f09fb429000 rwxp 00000000 00:00 0 
+7f09fb429000-7f09fb453000 rwxp 00000000 00:00 0 
+7f09fb453000-7f09fb47f000 rwxp 00000000 00:00 0 
+7f09fb47f000-7f09fc940000 rwxp 00000000 00:00 0 
+7f09fc940000-7f0a00880000 rwxp 00000000 00:00 0 
+7f0a00880000-7f0a0ab00000 rwxp 00000000 00:00 0 
+7f0a0ab00000-7f0a15de0000 rwxp 00000000 00:00 0 
+7f0a15de0000-7f0a1af10000 rwxp 00000000 00:00 0 
+7f0a1af10000-7f0a20880000 rwxp 00000000 00:00 0 
+7f0a20885000-7f0a20af5000 rwxp 00000000 00:00 0 
+7f0a20af5000-7f0a23885000 rwxp 00000000 00:00 0 
+7f0a23885000-7f0a23893000 r-xp 00000000 fd:02 276033253                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libzip.so
+7f0a23893000-7f0a23995000 ---p 0000e000 fd:02 276033253                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libzip.so
+7f0a23995000-7f0a23998000 rwxp 00010000 fd:02 276033253                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libzip.so
+7f0a23998000-7f0a23999000 rwxp 00000000 00:00 0 
+7f0a23999000-7f0a239a5000 r-xp 00000000 fd:00 34145317                   /usr/lib64/libnss_files-2.17.so
+7f0a239a5000-7f0a23ba4000 ---p 0000c000 fd:00 34145317                   /usr/lib64/libnss_files-2.17.so
+7f0a23ba4000-7f0a23ba5000 r-xp 0000b000 fd:00 34145317                   /usr/lib64/libnss_files-2.17.so
+7f0a23ba5000-7f0a23ba6000 rwxp 0000c000 fd:00 34145317                   /usr/lib64/libnss_files-2.17.so
+7f0a23ba6000-7f0a23bac000 rwxp 00000000 00:00 0 
+7f0a23bac000-7f0a23bb3000 r-xp 00000000 fd:02 823346808                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/native_threads/libhpi.so
+7f0a23bb3000-7f0a23cb4000 ---p 00007000 fd:02 823346808                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/native_threads/libhpi.so
+7f0a23cb4000-7f0a23cb6000 rwxp 00008000 fd:02 823346808                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/native_threads/libhpi.so
+7f0a23cb6000-7f0a23cb7000 rwxp 00000000 00:00 0 
+7f0a23cb7000-7f0a23ccd000 r-xp 00000000 fd:00 34901753                   /usr/lib64/libnsl-2.17.so
+7f0a23ccd000-7f0a23ecd000 ---p 00016000 fd:00 34901753                   /usr/lib64/libnsl-2.17.so
+7f0a23ecd000-7f0a23ece000 r-xp 00016000 fd:00 34901753                   /usr/lib64/libnsl-2.17.so
+7f0a23ece000-7f0a23ecf000 rwxp 00017000 fd:00 34901753                   /usr/lib64/libnsl-2.17.so
+7f0a23ecf000-7f0a23ed1000 rwxp 00000000 00:00 0 
+7f0a23ed1000-7f0a23ef9000 r-xp 00000000 fd:02 275959377                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libjava.so
+7f0a23ef9000-7f0a23ff9000 ---p 00028000 fd:02 275959377                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libjava.so
+7f0a23ff9000-7f0a24000000 rwxp 00028000 fd:02 275959377                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libjava.so
+7f0a24000000-7f0a2428a000 rwxp 00000000 00:00 0 
+7f0a2428a000-7f0a28000000 ---p 00000000 00:00 0 
+7f0a28007000-7f0a2800f000 r-xs 0009c000 fd:02 821259072                  /home/user/Xilinx/14.7/ISE_DS/ISE/bin/java/chipscope/jide-charts.jar
+7f0a2800f000-7f0a2801a000 rwxp 00000000 00:00 0 
+7f0a2801a000-7f0a28039000 rwxp 00000000 00:00 0 
+7f0a28039000-7f0a28046000 r-xp 00000000 fd:02 274037160                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libverify.so
+7f0a28046000-7f0a28145000 ---p 0000d000 fd:02 274037160                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libverify.so
+7f0a28145000-7f0a28148000 rwxp 0000c000 fd:02 274037160                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libverify.so
+7f0a28148000-7f0a2814f000 r-xp 00000000 fd:00 34375412                   /usr/lib64/librt-2.17.so
+7f0a2814f000-7f0a2834e000 ---p 00007000 fd:00 34375412                   /usr/lib64/librt-2.17.so
+7f0a2834e000-7f0a2834f000 r-xp 00006000 fd:00 34375412                   /usr/lib64/librt-2.17.so
+7f0a2834f000-7f0a28350000 rwxp 00007000 fd:00 34375412                   /usr/lib64/librt-2.17.so
+7f0a28350000-7f0a28354000 ---p 00000000 00:00 0 
+7f0a28354000-7f0a29351000 rwxp 00000000 00:00 0 
+7f0a29351000-7f0a29452000 r-xp 00000000 fd:00 34901751                   /usr/lib64/libm-2.17.so
+7f0a29452000-7f0a29651000 ---p 00101000 fd:00 34901751                   /usr/lib64/libm-2.17.so
+7f0a29651000-7f0a29652000 r-xp 00100000 fd:00 34901751                   /usr/lib64/libm-2.17.so
+7f0a29652000-7f0a29653000 rwxp 00101000 fd:00 34901751                   /usr/lib64/libm-2.17.so
+7f0a29653000-7f0a29e2d000 r-xp 00000000 fd:02 541954394                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/server/libjvm.so
+7f0a29e2d000-7f0a29f2f000 ---p 007da000 fd:02 541954394                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/server/libjvm.so
+7f0a29f2f000-7f0a2a0c0000 rwxp 007dc000 fd:02 541954394                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/server/libjvm.so
+7f0a2a0c0000-7f0a2a0fb000 rwxp 00000000 00:00 0 
+7f0a2a0fb000-7f0a2a2bd000 r-xp 00000000 fd:00 33586736                   /usr/lib64/libc-2.17.so
+7f0a2a2bd000-7f0a2a4bd000 ---p 001c2000 fd:00 33586736                   /usr/lib64/libc-2.17.so
+7f0a2a4bd000-7f0a2a4c1000 r-xp 001c2000 fd:00 33586736                   /usr/lib64/libc-2.17.so
+7f0a2a4c1000-7f0a2a4c3000 rwxp 001c6000 fd:00 33586736                   /usr/lib64/libc-2.17.so
+7f0a2a4c3000-7f0a2a4c8000 rwxp 00000000 00:00 0 
+7f0a2a4c8000-7f0a2a4ca000 r-xp 00000000 fd:00 34901749                   /usr/lib64/libdl-2.17.so
+7f0a2a4ca000-7f0a2a6ca000 ---p 00002000 fd:00 34901749                   /usr/lib64/libdl-2.17.so
+7f0a2a6ca000-7f0a2a6cb000 r-xp 00002000 fd:00 34901749                   /usr/lib64/libdl-2.17.so
+7f0a2a6cb000-7f0a2a6cc000 rwxp 00003000 fd:00 34901749                   /usr/lib64/libdl-2.17.so
+7f0a2a6cc000-7f0a2a6e3000 r-xp 00000000 fd:00 34901768                   /usr/lib64/libpthread-2.17.so
+7f0a2a6e3000-7f0a2a8e2000 ---p 00017000 fd:00 34901768                   /usr/lib64/libpthread-2.17.so
+7f0a2a8e2000-7f0a2a8e3000 r-xp 00016000 fd:00 34901768                   /usr/lib64/libpthread-2.17.so
+7f0a2a8e3000-7f0a2a8e4000 rwxp 00017000 fd:00 34901768                   /usr/lib64/libpthread-2.17.so
+7f0a2a8e4000-7f0a2a8e8000 rwxp 00000000 00:00 0 
+7f0a2a8e8000-7f0a2a90a000 r-xp 00000000 fd:00 34901743                   /usr/lib64/ld-2.17.so
+7f0a2a910000-7f0a2a918000 r-xs 00115000 fd:02 821233227                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/resources.jar
+7f0a2a918000-7f0a2a91f000 r-xs 000a4000 fd:02 823709325                  /home/user/Xilinx/14.7/ISE_DS/ISE/bin/java/chipscope/iText.jar
+7f0a2a91f000-7f0a2a929000 rwxp 00000000 00:00 0 
+7f0a2a929000-7f0a2a9df000 rwxp 00000000 00:00 0 
+7f0a2a9df000-7f0a2a9e3000 rwxp 00000000 00:00 0 
+7f0a2a9e3000-7f0a2a9ea000 r-xp 00000000 fd:02 275959380                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/jli/libjli.so
+7f0a2a9ea000-7f0a2aaeb000 ---p 00007000 fd:02 275959380                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/jli/libjli.so
+7f0a2aaeb000-7f0a2aaed000 rwxp 00008000 fd:02 275959380                  /home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/jli/libjli.so
+7f0a2aaed000-7f0a2aaee000 rwxp 00000000 00:00 0 
+7f0a2aaef000-7f0a2aafb000 r-xs 000a3000 fd:02 821259071                  /home/user/Xilinx/14.7/ISE_DS/ISE/bin/java/chipscope/jbcl.jar
+7f0a2aafb000-7f0a2aafe000 r-xs 00023000 fd:02 823709351                  /home/user/Xilinx/14.7/ISE_DS/ISE/bin/java/chipscope/jdom.jar
+7f0a2aafe000-7f0a2ab06000 rwxs 00000000 fd:00 68529883                   /tmp/hsperfdata_user/15079
+7f0a2ab06000-7f0a2ab07000 rwxp 00000000 00:00 0 
+7f0a2ab07000-7f0a2ab08000 r-xp 00000000 00:00 0 
+7f0a2ab08000-7f0a2ab09000 rwxp 00000000 00:00 0 
+7f0a2ab09000-7f0a2ab0a000 r-xp 00021000 fd:00 34901743                   /usr/lib64/ld-2.17.so
+7f0a2ab0a000-7f0a2ab0b000 rwxp 00022000 fd:00 34901743                   /usr/lib64/ld-2.17.so
+7f0a2ab0b000-7f0a2ab0c000 rwxp 00000000 00:00 0 
+7ffee2e8d000-7ffee2eae000 rwxp 00000000 00:00 0                          [stack]
+7ffee2f37000-7ffee2f39000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+jvm_args: -Xmx512m -Xss16m 
+java_command: com.xilinx.chipscope.analyzer.gui.CSGui
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=/home/user/Xilinx/14.7/ISE_DS/ISE//bin/lin64:/home/user/Xilinx/14.7/ISE_DS/ISE/bin/lin64:/home/user/Xilinx/14.7/ISE_DS/ISE/sysgen/util:/home/user/Xilinx/14.7/ISE_DS/ISE/../../../DocNav:/home/user/Xilinx/14.7/ISE_DS/PlanAhead/bin:/home/user/Xilinx/14.7/ISE_DS/EDK/bin/lin64:/home/user/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/lin/bin:/home/user/Xilinx/14.7/ISE_DS/EDK/gnu/powerpc-eabi/lin/bin:/home/user/Xilinx/14.7/ISE_DS/EDK/gnu/arm/lin/bin:/home/user/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_be/bin:/home/user/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_le/bin:/home/user/Xilinx/14.7/ISE_DS/common/bin/lin64:/home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/exports/centos7/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/user/.local/bin:/home/user/bin
+LD_LIBRARY_PATH=/home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64/server:/home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/lib/amd64:/home/user/Xilinx/14.7/ISE_DS/ISE/java6/lin64/jre/../lib/amd64:/home/user/Xilinx/14.7/ISE_DS/ISE//lib/lin64:/home/user/Xilinx/14.7/ISE_DS/ISE/lib/lin64:/home/user/Xilinx/14.7/ISE_DS/EDK/lib/lin64:/home/user/Xilinx/14.7/ISE_DS/common/lib/lin64
+SHELL=/bin/bash
+DISPLAY=localhost:10.0
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0x7311c0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGBUS: [libjvm.so+0x7311c0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGFPE: [libjvm.so+0x5f5da0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGPIPE: [libjvm.so+0x5f5da0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGXFSZ: [libjvm.so+0x5f5da0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGILL: [libjvm.so+0x5f5da0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGUSR1: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGUSR2: [libjvm.so+0x5f85c0], sa_mask[0]=0x00000000, sa_flags=0x10000004
+SIGHUP: [libjvm.so+0x5f8310], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGINT: [libjvm.so+0x5f8310], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGTERM: [libjvm.so+0x5f8310], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGQUIT: [libjvm.so+0x5f8310], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+
+
+---------------  S Y S T E M  ---------------
+
+OS:CentOS Linux release 7.6.1810 (Core) 
+
+uname:Linux 3.10.0-957.5.1.el7.x86_64 #1 SMP Fri Feb 1 14:54:57 UTC 2019 x86_64
+libc:glibc 2.17 NPTL 2.17 
+rlimit: STACK 8515k, CORE 0k, NPROC 4096, NOFILE 4096, AS infinity
+load average:0.63 0.79 0.66
+
+CPU:total 4 (8 cores per cpu, 2 threads per core) family 6 model 69 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, ht
+
+Memory: 4k page, physical 15966332k(6828176k free), swap 8191996k(8191996k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (17.0-b16) for linux-amd64 JRE (1.6.0_21-b06), built on Jun 22 2010 01:10:00 by "java_re" with gcc 3.2.2 (SuSE Linux)
+
+time: Fri Mar 29 14:12:03 2019
+elapsed time: 11 seconds
+

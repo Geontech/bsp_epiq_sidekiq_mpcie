@@ -1,0 +1,18 @@
+<!--<application package='ocpi.core' done='file_write'>-->
+<application package='ocpi.core'>
+  <instance component="file_read" connect="capture_v2">
+    <property name='filename' value='test.input' />
+    <property name='messagesInFile' value='false' />
+    <property name='opcode' value='0' />
+    <property name='messageSize' value='16'/>
+    <property name='granularity' value='4'/>
+  </instance>
+  <instance component="ocpi.assets.util_comps.capture_v2" model="hdl" connect="file_write">
+    <property name='stopOnFull' value='false'/>
+    <property name='numRecords' value='256'/>
+    <property name='numDataWords' value='1024'/>-->
+  </instance>
+  <instance component="file_write">
+    <property name='filename' value='test.output' />
+  </instance>
+</application>
