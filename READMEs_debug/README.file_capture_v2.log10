@@ -1,0 +1,823 @@
+OCPI( 8:779.0665): The OpenCPI installation has been found at "/home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son"
+OCPI( 8:779.0665): OCPI_ROOT_DIR was "".  OCPI_CDK_DIR was "/home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/exports"
+OCPI( 8:779.0666): OpenCPI CDK location is: /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/exports
+OCPI( 8:779.0666): Processing XML system configuration file: "/home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/exports/default-system.xml"
+OCPI(10:779.0666): Found a "transfer" manager
+OCPI(10:779.0666): Found a "library" manager
+OCPI(10:779.0666): Found a "container" manager
+OCPI(10:779.0666): Processing "container" element in system config file
+OCPI(10:779.0666): Trying driver path: /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/exports/centos7/lib/sd/libocpi_rcc_s.so
+OCPI(10:779.0666): Trying driver path: /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/exports/centos7/lib/so/libocpi_rcc_s.so
+OCPI(10:779.0666): Trying driver path: /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/exports/centos7/lib/libocpi_rcc_s.so
+OCPI( 8:779.0666): Loading the "rcc" "container" driver from "/home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/exports/centos7/lib/libocpi_rcc_s.so"
+OCPI( 8:779.0668): Registering/constructing container driver: rcc
+OCPI( 8:779.0668): Registering/constructing driver: rcc
+OCPI(10:779.0668): Registering the RCC Container driver
+OCPI(10:779.0668): Trying driver path: /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/exports/centos7/lib/sd/libocpi_remote_s.so
+OCPI(10:779.0668): Trying driver path: /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/exports/centos7/lib/so/libocpi_remote_s.so
+OCPI(10:779.0668): Trying driver path: /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/exports/centos7/lib/libocpi_remote_s.so
+OCPI( 8:779.0668): Loading the "remote" "container" driver from "/home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/exports/centos7/lib/libocpi_remote_s.so"
+OCPI( 8:779.0671): Registering/constructing container driver: remote
+OCPI( 8:779.0671): Registering/constructing driver: remote
+OCPI(10:779.0671): Registering the Remote Container driver
+OCPI( 8:779.0671): Remote container discovery is off.  Use OCPI::API::enableServerDiscovery() or the OCPI_ENABLE_REMOTE_DISCOVERY variable described in the Application Guide.
+OCPI(10:779.0671): Trying driver path: /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/exports/centos7/lib/sd/libocpi_hdl_s.so
+OCPI(10:779.0671): Trying driver path: /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/exports/centos7/lib/so/libocpi_hdl_s.so
+OCPI(10:779.0671): Trying driver path: /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/exports/centos7/lib/libocpi_hdl_s.so
+OCPI( 8:779.0671): Loading the "hdl" "container" driver from "/home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/exports/centos7/lib/libocpi_hdl_s.so"
+OCPI( 8:779.0675): Registering/constructing container driver: hdl
+OCPI( 8:779.0675): Registering/constructing driver: hdl
+OCPI(10:779.0675): Processing "transfer" element in system config file
+OCPI(10:779.0675): Trying driver path: /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/exports/centos7/lib/sd/libocpi_pio_s.so
+OCPI(10:779.0675): Trying driver path: /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/exports/centos7/lib/so/libocpi_pio_s.so
+OCPI(10:779.0675): Trying driver path: /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/exports/centos7/lib/libocpi_pio_s.so
+OCPI( 8:779.0675): Loading the "pio" "transfer" driver from "/home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/exports/centos7/lib/libocpi_pio_s.so"
+OCPI( 8:779.0676): Registering/constructing transfer driver: pio
+OCPI( 8:779.0676): Registering/constructing driver: pio
+OCPI(10:779.0676): In PIO::XferFactory::PIO::XferFactory(): 3145728
+OCPI(10:779.0676): Trying driver path: /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/exports/centos7/lib/sd/libocpi_dma_s.so
+OCPI(10:779.0676): Trying driver path: /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/exports/centos7/lib/so/libocpi_dma_s.so
+OCPI(10:779.0676): Trying driver path: /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/exports/centos7/lib/libocpi_dma_s.so
+OCPI( 8:779.0676): Loading the "dma" "transfer" driver from "/home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/exports/centos7/lib/libocpi_dma_s.so"
+OCPI( 8:779.0676): Registering/constructing transfer driver: dma
+OCPI( 8:779.0676): Registering/constructing driver: dma
+OCPI(10:779.0676): Trying driver path: /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/exports/centos7/lib/sd/libocpi_socket_s.so
+OCPI(10:779.0676): Trying driver path: /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/exports/centos7/lib/so/libocpi_socket_s.so
+OCPI(10:779.0677): Trying driver path: /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/exports/centos7/lib/libocpi_socket_s.so
+OCPI( 8:779.0677): Loading the "socket" "transfer" driver from "/home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/exports/centos7/lib/libocpi_socket_s.so"
+OCPI( 8:779.0677): Registering/constructing transfer driver: socket
+OCPI( 8:779.0677): Registering/constructing driver: socket
+OCPI(10:779.0677): Configuring the driver managers
+OCPI(10:779.0677): Configuring the transfer manager
+OCPI(10:779.0677): Before configuration, SMB size is 3145728
+OCPI(10:779.0677): After configuration, SMB size is 104857600
+OCPI(10:779.0677): After environment, SMB size is 104857600
+OCPI(10:779.0677): Configuring the socket driver with 0x1ed6020/socket
+OCPI(10:779.0677): Configuring the dma driver with 0x1ed5f70/dma
+OCPI(10:779.0677): Configuring the pio driver with 0x1ed5ea0/pio
+OCPI( 8:779.0677): Transfer Driver manager has protocol ocpi-socket-rdma
+OCPI( 8:779.0677): Transfer Driver manager has protocol ocpi-dma-pio
+OCPI( 8:779.0677): Transfer Driver manager has protocol ocpi-smb-pio
+OCPI(10:779.0677): Configuring the library manager
+OCPI(10:779.0677): Configuring the component driver with (nil)/(null)
+OCPI(10:779.0677): Configuring the simple driver with (nil)/(null)
+OCPI(10:779.0677): Configuring the container manager
+OCPI(10:779.0677): Configuring the hdl driver with 0x1ed5d00/hdl
+OCPI(10:779.0677): Configuring the remote driver with 0x1ed5c50/remote
+OCPI(10:779.0677): Configuring the rcc driver with 0x1ed5b60/rcc
+OCPI(10:779.0677): Performing discovery for the transfer manager
+OCPI( 8:779.0678): Performing discovery for all transfer drivers
+OCPI(10:779.0678): Performing discovery for the library manager
+OCPI( 8:779.0678): Performing discovery for all library drivers
+OCPI(10:779.0678): ComponentLibrary search with OCPI_LIBRARY_PATH: /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts:/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts
+OCPI(10:779.0678): OCPI_LIBRARY_PATH is /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts:/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts
+OCPI( 8:779.0678): Searching directory /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts recursively, from OCPI_LIBRARY_PATH
+OCPI(10:779.0678): Artifact file /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.biasFGM_cc.rcc.0.centos7.so has artifact metadata
+OCPI(10:779.0678): Added implementation in artifact "/home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.biasFGM_cc.rcc.0.centos7.so" spec "ocpi.core.biasFGM" name "biasFGM_cc" inst "no-instance-name"
+OCPI(10:779.0679): Artifact file /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.zcprod.rcc.0.centos7.so has artifact metadata
+OCPI(10:779.0679): Added implementation in artifact "/home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.zcprod.rcc.0.centos7.so" spec "ocpi.core.Producer" name "Producer" inst "no-instance-name"
+OCPI(10:779.0680): Added implementation in artifact "/home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.zcprod.rcc.0.centos7.so" spec "ocpi.core.Consumer" name "Consumer" inst "no-instance-name"
+OCPI(10:779.0680): Added implementation in artifact "/home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.zcprod.rcc.0.centos7.so" spec "ocpi.core.zcloop" name "Loopback" inst "no-instance-name"
+OCPI(10:779.0680): Artifact file /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.file_read.rcc.0.centos7.so has artifact metadata
+OCPI(10:779.0681): Added implementation in artifact "/home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.file_read.rcc.0.centos7.so" spec "ocpi.core.file_read" name "file_read" inst "no-instance-name"
+OCPI(10:779.0681): Artifact file /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.hello_world_cc.rcc.0.centos7.so has artifact metadata
+OCPI(10:779.0681): Added implementation in artifact "/home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.hello_world_cc.rcc.0.centos7.so" spec "ocpi.core.hello_world" name "hello_world_cc" inst "no-instance-name"
+OCPI(10:779.0681): Artifact file /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.hello_world.rcc.0.centos7.so has artifact metadata
+OCPI(10:779.0681): Added implementation in artifact "/home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.hello_world.rcc.0.centos7.so" spec "ocpi.core.hello_world" name "hello_world" inst "no-instance-name"
+OCPI(10:779.0681): Artifact file /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.backpressure.rcc.0.centos7.so has artifact metadata
+OCPI(10:779.0682): Added implementation in artifact "/home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.backpressure.rcc.0.centos7.so" spec "ocpi.core.backpressure" name "backpressure" inst "no-instance-name"
+OCPI(10:779.0682): Artifact file /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.nothing.rcc.0.centos7.so has artifact metadata
+OCPI(10:779.0682): Added implementation in artifact "/home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.nothing.rcc.0.centos7.so" spec "ocpi.core.nothing" name "nothing" inst "no-instance-name"
+OCPI(10:779.0682): Artifact file /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.file_write.rcc.0.centos7.so has artifact metadata
+OCPI(10:779.0682): Added implementation in artifact "/home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.file_write.rcc.0.centos7.so" spec "ocpi.core.file_write" name "file_write" inst "no-instance-name"
+OCPI(10:779.0682): Artifact file /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.bias_cc.rcc.0.centos7.so has artifact metadata
+OCPI(10:779.0683): Added implementation in artifact "/home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.bias_cc.rcc.0.centos7.so" spec "ocpi.core.bias" name "bias_cc" inst "no-instance-name"
+OCPI(10:779.0683): Artifact file /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.metadata_stressor.rcc.0.centos7.so has artifact metadata
+OCPI(10:779.0684): Added implementation in artifact "/home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.metadata_stressor.rcc.0.centos7.so" spec "ocpi.core.metadata_stressor" name "metadata_stressor" inst "no-instance-name"
+OCPI(10:779.0684): Artifact file /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.bias.rcc.0.centos7.so has artifact metadata
+OCPI(10:779.0684): Added implementation in artifact "/home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.bias.rcc.0.centos7.so" spec "ocpi.core.bias" name "bias" inst "no-instance-name"
+OCPI(10:779.0684): Artifact file /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.bias_param.rcc.0.centos7.so has artifact metadata
+OCPI(10:779.0684): Added implementation in artifact "/home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.bias_param.rcc.0.centos7.so" spec "ocpi.core.bias" name "bias_param" inst "no-instance-name"
+OCPI(10:779.0684): Artifact file /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.bias_param.rcc.1.centos7.so has artifact metadata
+OCPI(10:779.0685): Added implementation in artifact "/home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.bias_param.rcc.1.centos7.so" spec "ocpi.core.bias" name "bias_param-1" inst "no-instance-name"
+OCPI(10:779.0685): Artifact file /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.bias_param.rcc.2.centos7.so has artifact metadata
+OCPI(10:779.0685): Added implementation in artifact "/home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.bias_param.rcc.2.centos7.so" spec "ocpi.core.bias" name "bias_param-2" inst "no-instance-name"
+OCPI(10:779.0685): Artifact file /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.bias_spcm.rcc.0.centos7.so has artifact metadata
+OCPI(10:779.0685): Added implementation in artifact "/home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.bias_spcm.rcc.0.centos7.so" spec "ocpi.core.bias" name "bias_spcm" inst "no-instance-name"
+OCPI(10:779.0685): Artifact file /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.proxy_hdl.rcc.0.centos7.so has artifact metadata
+OCPI(10:779.0686): Added implementation in artifact "/home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.proxy_hdl.rcc.0.centos7.so" spec "ocpi.core.proxy_hdl" name "proxy_hdl" inst "no-instance-name"
+OCPI(10:779.0686): Artifact file /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.proxy.rcc.0.centos7.so has artifact metadata
+OCPI(10:779.0686): Added implementation in artifact "/home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.proxy.rcc.0.centos7.so" spec "ocpi.core.proxy" name "proxy" inst "no-instance-name"
+OCPI( 8:779.0686): Searching directory /home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts recursively, from OCPI_LIBRARY_PATH
+OCPI(10:779.0686): Path name found in OCPI_LIBRARY_PATH, "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.biascapture_mpcie_base.hdl.0.mpcie.gz", is nonexistent, not a normal file, or a broken link.  It will be ignored
+OCPI(10:779.0686): Path name found in OCPI_LIBRARY_PATH, "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.captureonly_mpcie_base.hdl.0.mpcie.gz", is nonexistent, not a normal file, or a broken link.  It will be ignored
+OCPI(10:779.0686): Artifact file /home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.tb_bias_v2_mpcie_base.hdl.0.mpcie.gz has artifact metadata
+OCPI(10:779.0687): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.tb_bias_v2_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.platform" name "mpcie" inst "p/mpcie"
+OCPI(10:779.0687): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.tb_bias_v2_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.devices.time_server" name "time_server" inst "p/time_server"
+OCPI(10:779.0687): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.tb_bias_v2_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.assets.util_comps.pattern_v2" name "pattern_v2" inst "a/pattern_v2"
+OCPI(10:779.0687): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.tb_bias_v2_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.bias" name "bias" inst "a/bias"
+OCPI(10:779.0688): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.tb_bias_v2_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.assets.util_comps.capture_v2" name "capture_v2" inst "a/capture_v2"
+OCPI(10:779.0688): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.tb_bias_v2_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.ocscp" name "ocscp" inst "c/ocscp"
+OCPI(10:779.0688): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.tb_bias_v2_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.devices.sdp_term" name "sdp_term" inst "c/unoc_term0_0"
+OCPI(10:779.0688): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.tb_bias_v2_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.time_client" name "time_client" inst "c/tb_bias_v2_wti0_time_client"
+OCPI(10:779.0688): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.tb_bias_v2_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.metadata" name "metadata" inst "c/metadata"
+OCPI(10:779.0688): Setting connection in /home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.tb_bias_v2_mpcie_base.hdl.0.mpcie.gz on pattern_v2 port out with other bias port in
+OCPI(10:779.0688): Setting connection in /home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.tb_bias_v2_mpcie_base.hdl.0.mpcie.gz on bias port in with other pattern_v2 port out
+OCPI(10:779.0688): Setting connection in /home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.tb_bias_v2_mpcie_base.hdl.0.mpcie.gz on bias port out with other capture_v2 port in
+OCPI(10:779.0688): Setting connection in /home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.tb_bias_v2_mpcie_base.hdl.0.mpcie.gz on capture_v2 port in with other bias port out
+OCPI(10:779.0689): Artifact file /home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.pattern_v2_only_mpcie_base.hdl.0.mpcie.gz has artifact metadata
+OCPI(10:779.0689): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.pattern_v2_only_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.platform" name "mpcie" inst "p/mpcie"
+OCPI(10:779.0689): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.pattern_v2_only_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.devices.time_server" name "time_server" inst "p/time_server"
+OCPI(10:779.0690): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.pattern_v2_only_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.assets.util_comps.pattern_v2" name "pattern_v2" inst "a/pattern_v2"
+OCPI(10:779.0690): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.pattern_v2_only_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.devices.sdp_send" name "sdp_send" inst "no-instance-name"
+OCPI(10:779.0690): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.pattern_v2_only_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.devices.sdp_pipeline" name "sdp_pipeline" inst "c/mpcie_sdp_pipeline0_0"
+OCPI(10:779.0690): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.pattern_v2_only_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.ocscp" name "ocscp" inst "c/ocscp"
+OCPI(10:779.0690): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.pattern_v2_only_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.metadata" name "metadata" inst "c/metadata"
+OCPI(10:779.0690): Setting connection in /home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.pattern_v2_only_mpcie_base.hdl.0.mpcie.gz on pattern_v2 port out with other none port none
+OCPI(10:779.0691): Artifact file /home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.bias_capture_v2_mpcie_base.hdl.0.mpcie.gz has artifact metadata
+OCPI(10:779.0691): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.bias_capture_v2_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.platform" name "mpcie" inst "p/mpcie"
+OCPI(10:779.0691): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.bias_capture_v2_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.devices.time_server" name "time_server" inst "p/time_server"
+OCPI(10:779.0692): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.bias_capture_v2_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.bias" name "bias_vhdl" inst "a/bias_vhdl"
+OCPI(10:779.0692): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.bias_capture_v2_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.assets.util_comps.capture_v2" name "capture_v2" inst "a/capture_v2"
+OCPI(10:779.0693): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.bias_capture_v2_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.devices.sdp_receive" name "sdp_receive" inst "no-instance-name"
+OCPI(10:779.0693): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.bias_capture_v2_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.devices.sdp_pipeline" name "sdp_pipeline" inst "c/mpcie_sdp_pipeline0_0"
+OCPI(10:779.0693): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.bias_capture_v2_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.ocscp" name "ocscp" inst "c/ocscp"
+OCPI(10:779.0693): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.bias_capture_v2_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.time_client" name "time_client" inst "c/bias_capture_v2_wti0_time_client"
+OCPI(10:779.0693): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.bias_capture_v2_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.metadata" name "metadata" inst "c/metadata"
+OCPI(10:779.0693): Setting connection in /home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.bias_capture_v2_mpcie_base.hdl.0.mpcie.gz on bias_vhdl port out with other capture_v2 port in
+OCPI(10:779.0693): Setting connection in /home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.bias_capture_v2_mpcie_base.hdl.0.mpcie.gz on capture_v2 port in with other bias_vhdl port out
+OCPI(10:779.0693): Setting connection in /home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.bias_capture_v2_mpcie_base.hdl.0.mpcie.gz on bias_vhdl port in with other none port none
+OCPI(10:779.0693): Artifact file /home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.capture_v2_only_mpcie_base.hdl.0.mpcie.gz has artifact metadata
+OCPI(10:779.0694): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.capture_v2_only_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.platform" name "mpcie" inst "p/mpcie"
+OCPI(10:779.0694): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.capture_v2_only_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.devices.time_server" name "time_server" inst "p/time_server"
+OCPI(10:779.0695): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.capture_v2_only_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.assets.util_comps.capture_v2" name "capture_v2" inst "a/capture_v2"
+OCPI(10:779.0695): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.capture_v2_only_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.devices.sdp_receive" name "sdp_receive" inst "no-instance-name"
+OCPI(10:779.0695): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.capture_v2_only_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.devices.sdp_pipeline" name "sdp_pipeline" inst "c/mpcie_sdp_pipeline0_0"
+OCPI(10:779.0695): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.capture_v2_only_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.devices.sdp_pipeline" name "sdp_pipeline" inst "c/mpcie_sdp_pipeline0_1"
+OCPI(10:779.0696): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.capture_v2_only_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.devices.sdp_send" name "sdp_send" inst "no-instance-name"
+OCPI(10:779.0696): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.capture_v2_only_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.devices.sdp_pipeline" name "sdp_pipeline" inst "c/mpcie_sdp_pipeline0_0"
+OCPI(10:779.0696): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.capture_v2_only_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.devices.sdp_pipeline" name "sdp_pipeline" inst "c/mpcie_sdp_pipeline0_1"
+OCPI(10:779.0696): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.capture_v2_only_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.devices.sdp_node" name "sdp_node" inst "c/mpcie_unoc0_0"
+OCPI(10:779.0696): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.capture_v2_only_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.ocscp" name "ocscp" inst "c/ocscp"
+OCPI(10:779.0696): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.capture_v2_only_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.time_client" name "time_client" inst "c/capture_v2_only_wti0_time_client"
+OCPI(10:779.0696): Added implementation in artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.capture_v2_only_mpcie_base.hdl.0.mpcie.gz" spec "ocpi.core.metadata" name "metadata" inst "c/metadata"
+OCPI(10:779.0696): Setting connection in /home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.capture_v2_only_mpcie_base.hdl.0.mpcie.gz on capture_v2 port in with other none port none
+OCPI(10:779.0696): Setting connection in /home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.capture_v2_only_mpcie_base.hdl.0.mpcie.gz on capture_v2 port out with other none port none
+OCPI(10:779.0696): Performing discovery for the container manager
+OCPI( 8:779.0696): Performing discovery for all container drivers
+OCPI( 8:779.0696): Searching for local Zynq/PL HDL device.
+OCPI( 8:779.0696): Searching for local PCI-based HDL devices.
+OCPI(10:779.0696): get8RegisterOffset 0x7ff327921000 0
+OCPI(10:779.0696): get8RegisterOffset 0x7ff327921000 0 -> 6e
+OCPI(10:779.0696): get8RegisterOffset 0x7ff327921000 1
+OCPI(10:779.0696): get8RegisterOffset 0x7ff327921000 1 -> 65
+OCPI(10:779.0696): get8RegisterOffset 0x7ff327921000 2
+OCPI(10:779.0697): get8RegisterOffset 0x7ff327921000 2 -> 70
+OCPI(10:779.0697): get8RegisterOffset 0x7ff327921000 3
+OCPI(10:779.0697): get8RegisterOffset 0x7ff327921000 3 -> 4f
+OCPI(10:779.0697): get8RegisterOffset 0x7ff327921000 4
+OCPI(10:779.0697): get8RegisterOffset 0x7ff327921000 4 -> 0
+OCPI(10:779.0697): get8RegisterOffset 0x7ff327921000 5
+OCPI(10:779.0697): get8RegisterOffset 0x7ff327921000 5 -> 49
+OCPI(10:779.0697): get8RegisterOffset 0x7ff327921000 6
+OCPI(10:779.0697): get8RegisterOffset 0x7ff327921000 6 -> 50
+OCPI(10:779.0697): get8RegisterOffset 0x7ff327921000 7
+OCPI(10:779.0697): get8RegisterOffset 0x7ff327921000 7 -> 43
+OCPI(10:779.0697): get64RegisterOffset 0x7ff327921000 0
+OCPI(10:779.0697): get64RegisterOffset 0x7ff327921000 0 -> 435049004f70656e
+OCPI(10:779.0697): HDL::Device::init: platform worker does not exist, first access in process
+OCPI(10:779.0697): Timeout for platform is 16 log is 4
+OCPI(10:779.0697): Timeout for time_server is 16 log is 4
+OCPI(10:779.0697): get32RegisterOffset 0x7ff327925000 24
+OCPI(10:779.0697): get32RegisterOffset 0x7ff327925000 24 -> 80000004
+OCPI(10:779.0697): get64RegisterOffset 0x7ff327921000 0
+OCPI(10:779.0697): get64RegisterOffset 0x7ff327921000 0 -> 435049004f70656e
+OCPI(10:779.0697): getBytesRegisterOffset 0x7ff327a21000 0 sz 40
+OCPI( 8:779.0697): HDL Device: PCI:0000:03:00.0, with bitstream birthday: Fri Apr  5 17:40:43 2019
+OCPI(10:779.0697): getDeviceConfig driver 'hdl' for device 'PCI:0000:03:00.0' m_config 0x1ed5d00
+OCPI(10:779.0697): getDeviceConfig driver 'hdl' for device '0000:03:00.0' m_config 0x1ed5d00
+OCPI(10:779.0697): get64RegisterOffset 0x7ff327921000 0
+OCPI(10:779.0697): get64RegisterOffset 0x7ff327921000 0 -> 435049004f70656e
+OCPI(10:779.0697): getBytesRegisterOffset 0x7ff327a21000 0 sz 40
+OCPI( 8:779.0697): HDL Device: PCI:0000:03:00.0, with bitstream birthday: Fri Apr  5 17:40:43 2019
+OCPI(10:779.0697): GPP: Not Using events
+OCPI(10:779.0697): get64RegisterOffset 0x7ff327b21000 0
+OCPI(10:779.0697): get64RegisterOffset 0x7ff327b21000 0 -> 76f4d716d8e
+OCPI(10:779.0697): get64RegisterOffset 0x7ff327b21000 0
+OCPI(10:779.0697): get64RegisterOffset 0x7ff327b21000 0 -> 76f4d749aea
+OCPI(10:779.0697): get64RegisterOffset 0x7ff327b21000 0
+OCPI(10:779.0697): get64RegisterOffset 0x7ff327b21000 0 -> 76f4d75c93d
+OCPI(10:779.0697): get64RegisterOffset 0x7ff327b21000 0
+OCPI(10:779.0697): get64RegisterOffset 0x7ff327b21000 0 -> 76f4d769a49
+OCPI(10:779.0697): if_nameindex scan: 1 = lo (1 total)
+OCPI(10:779.0697): if_nameindex scan: 2 = eno1 (2 total)
+OCPI(10:779.0697): if_nameindex scan: 3 = wlp2s0 (3 total)
+OCPI(10:779.0697): if_nameindex scan: 4 = virbr0 (4 total)
+OCPI(10:779.0697): if_nameindex scan: 5 = virbr0-nic (5 total)
+OCPI(10:779.0698): found ether interface 'lo' which is up, connected, at address <ANY>:0
+OCPI(10:779.0698): found ether interface 'eno1' which is up, connected, at address c0:3f:d5:6f:92:f7
+OCPI(10:779.0698): Establishing system identity from interface 'eno1': c0:3f:d5:6f:92:f7
+OCPI( 9:779.0698): Adding transport ocpi-dma-pio(c0:3f:d5:6f:92:f7) to container PCI:0000:03:00.0
+OCPI(10:779.0698): HDL Container for device PCI:0000:03:00.0 constructed.  ESN: '' Platform/part is mpcie/xc6slx45t.
+OCPI( 8:779.0698): Searching for local HDL simulators.
+OCPI(10:779.0698): Looking for mk for simulator /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/project-registry/ocpi.assets/exports/lib/platforms/mk/runSimExec.mk
+OCPI(10:779.0698): Looking for matchstiq_z1 for simulator /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/project-registry/ocpi.assets/exports/lib/platforms/matchstiq_z1/runSimExec.matchstiq_z1
+OCPI(10:779.0698): Looking for alst4 for simulator /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/project-registry/ocpi.assets/exports/lib/platforms/alst4/runSimExec.alst4
+OCPI(10:779.0698): Looking for alst4x for simulator /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/project-registry/ocpi.assets/exports/lib/platforms/alst4x/runSimExec.alst4x
+OCPI(10:779.0698): Looking for ml605 for simulator /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/project-registry/ocpi.assets/exports/lib/platforms/ml605/runSimExec.ml605
+OCPI(10:779.0698): Looking for zed for simulator /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/project-registry/ocpi.assets/exports/lib/platforms/zed/runSimExec.zed
+OCPI(10:779.0698): Looking for zed_ise for simulator /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/project-registry/ocpi.assets/exports/lib/platforms/zed_ise/runSimExec.zed_ise
+OCPI(10:779.0698): Looking for isim for simulator /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/project-registry/ocpi.core/exports/lib/platforms/isim/runSimExec.isim
+OCPI(10:779.0698): Looking for modelsim for simulator /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/project-registry/ocpi.core/exports/lib/platforms/modelsim/runSimExec.modelsim
+OCPI(10:779.0698): Looking for xsim for simulator /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/project-registry/ocpi.core/exports/lib/platforms/xsim/runSimExec.xsim
+OCPI(10:779.0698): Looking for mpcie for simulator /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/project-registry/bsp.sidekiq_sdp/exports/lib/platforms/mpcie/runSimExec.mpcie
+OCPI(10:779.0698): Discovery for container driver remote suppressed
+OCPI( 8:779.0698): Searching for RCC containers, and implicitly finding one.
+OCPI( 9:779.0698): Adding transport ocpi-dma-pio(c0:3f:d5:6f:92:f7) to container rcc0
+OCPI( 9:779.0698): Adding transport ocpi-smb-pio(c0:3f:d5:6f:92:f7) to container rcc0
+OCPI( 8:779.0698): Transport ocpi-scif-dma not supported in this process.  Not loaded/spec'd in system.xml?
+OCPI( 9:779.0698): Adding transport ocpi-socket-rdma() to container rcc0
+OCPI( 8:779.0698): Transport ocpi-udp-rdma not supported in this process.  Not loaded/spec'd in system.xml?
+OCPI(10:779.0699): ContainerManager::get(): Calling configureOnce
+OCPI(10:779.0699): ContainerManager::get(): Back with 2 containers
+Available containers are:  0: PCI:0000:03:00.0 [model: hdl os:  platform: mpcie]OCPI(10:779.0699): ContainerManager::get(): Calling configureOnce
+OCPI(10:779.0699): ContainerManager::get(): Back with 2 containers
+, 1: rcc0 [model: rcc os: linux platform: centos7]OCPI(10:779.0699): ContainerManager::get(): Calling configureOnce
+OCPI(10:779.0699): ContainerManager::get(): Back with 2 containers
+
+OCPI( 8:779.0699): Component: file_read name: file_read impl:  spec: ocpi.core.file_read selection: 
+OCPI( 8:779.0699): Component: ocpi.assets.util_comps.capture_v2 name: capture_v2 impl:  spec: ocpi.assets.util_comps.capture_v2 selection: 
+OCPI( 8:779.0699): Considering implementation for instance "file_read" with spec "ocpi.core.file_read": "file_read" from artifact "/home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.file_read.rcc.0.centos7.so"
+OCPI( 8:779.0699): Accepted implementation before connectivity checks with score 1
+OCPI( 8:779.0699): Considering implementation for instance "capture_v2" with spec "ocpi.assets.util_comps.capture_v2": "capture_v2/a/capture_v2" from artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.tb_bias_v2_mpcie_base.hdl.0.mpcie.gz"
+OCPI( 8:779.0699): Accepted implementation before connectivity checks with score 1
+OCPI( 8:779.0699): Considering implementation for instance "capture_v2" with spec "ocpi.assets.util_comps.capture_v2": "capture_v2/a/capture_v2" from artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.bias_capture_v2_mpcie_base.hdl.0.mpcie.gz"
+OCPI( 8:779.0699): Accepted implementation before connectivity checks with score 1
+OCPI( 8:779.0699): Considering implementation for instance "capture_v2" with spec "ocpi.assets.util_comps.capture_v2": "capture_v2/a/capture_v2" from artifact "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.capture_v2_only_mpcie_base.hdl.0.mpcie.gz"
+OCPI( 8:779.0699): Accepted implementation before connectivity checks with score 1
+OCPI( 8:779.0699): Rejected "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.tb_bias_v2_mpcie_base.hdl.0.mpcie.gz" due to incompatible connection on port "in"
+OCPI( 8:779.0699): Artifact connects it to port 'out' of spec 'ocpi.core.bias', but application wants port 'out' of spec 'ocpi.core.file_read'
+OCPI( 8:779.0699): Rejected "/home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.bias_capture_v2_mpcie_base.hdl.0.mpcie.gz" due to incompatible connection on port "in"
+OCPI( 8:779.0699): Artifact connects it to port 'out' of spec 'ocpi.core.bias', but application wants port 'out' of spec 'ocpi.core.file_read'
+OCPI( 8:779.0699): For instance file_read there were 1 candidates.  These had potential containers:
+OCPI( 8:779.0699): Checking implementation file_read model rcc os linux version c7 arch x86_64 platform centos7 dynamic 0 opencpi version 1.5
+OCPI(10:779.0699): Finding containers for worker file_read container name <none specified>
+OCPI(10:779.0699): Trying container c->name: PCI:0000:03:00.0 ord 0
+OCPI( 8:779.0699): OpenCPI version is: 1.5
+OCPI( 8:779.0699): Artifact version checking is in effect. Set OCPI_ALLOW_VERSION_MISMATCH to 1 to allow.
+OCPI( 8:779.0699): vs. container PCI:0000:03:00.0 (0) model hdl os  version  arch  platform mpcie dynamic 0 opencpi version 1.5 ==> rejected
+OCPI(10:779.0699): Trying container c->name: rcc0 ord 1
+OCPI( 8:779.0699): vs. container rcc0 (1) model rcc os linux version c7 arch x86_64 platform centos7 dynamic 0 opencpi version 1.5 ==> accepted
+OCPI(10:779.0699): ContainerManager::get(): Calling configureOnce
+OCPI(10:779.0699): ContainerManager::get(): Back with 2 containers
+OCPI(10:779.0699): ContainerManager::get(): Calling configureOnce
+OCPI(10:779.0699): ContainerManager::get(): Back with 2 containers
+OCPI(10:779.0699): ContainerManager::get(): Calling configureOnce
+OCPI(10:779.0699): ContainerManager::get(): Back with 2 containers
+OCPI( 8:779.0699): Candidate 0 /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.file_read.rcc.0.centos7.so is ok for containers: 1: rcc0
+OCPI( 8:779.0699): For instance capture_v2 there were 1 candidates.  These had potential containers:
+OCPI( 8:779.0699): Checking implementation capture_v2 model hdl os  version  arch  platform mpcie dynamic 0 opencpi version 1.5
+OCPI(10:779.0699): Finding containers for worker capture_v2 container name <none specified>
+OCPI(10:779.0699): Trying container c->name: PCI:0000:03:00.0 ord 0
+OCPI( 8:779.0699): vs. container PCI:0000:03:00.0 (0) model hdl os  version  arch  platform mpcie dynamic 0 opencpi version 1.5 ==> accepted
+OCPI(10:779.0699): Trying container c->name: rcc0 ord 1
+OCPI( 8:779.0699): vs. container rcc0 (1) model rcc os linux version c7 arch x86_64 platform centos7 dynamic 0 opencpi version 1.5 ==> rejected
+OCPI(10:779.0699): ContainerManager::get(): Calling configureOnce
+OCPI(10:779.0699): ContainerManager::get(): Back with 2 containers
+OCPI(10:779.0699): ContainerManager::get(): Calling configureOnce
+OCPI(10:779.0699): ContainerManager::get(): Back with 2 containers
+OCPI(10:779.0699): ContainerManager::get(): Calling configureOnce
+OCPI(10:779.0699): ContainerManager::get(): Back with 2 containers
+OCPI( 8:779.0699): Candidate 0 /home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.capture_v2_only_mpcie_base.hdl.0.mpcie.gz is ok for containers: 0: PCI:0000:03:00.0
+OCPI(10:779.0699): doInstance 0 0 0
+OCPI(10:779.0699): doInstance connections ok: 1
+OCPI(10:779.0699): doInstance container: cont 0 feasible 0x2
+OCPI(10:779.0699): doInstance container: cont 1 feasible 0x2
+OCPI(10:779.0699): doInstance ok
+OCPI(10:779.0699): doInstance 1 1 0
+OCPI(10:779.0699): doInstance connections ok: 1
+OCPI(10:779.0699): doInstance container: cont 0 feasible 0x1
+OCPI(10:779.0699): doInstance ok
+OCPI(10:779.0699): Deployment with score 2 is:
+OCPI(10:779.0699):  Instance  0: Container: 1 Instance file_read in /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.file_read.rcc.0.centos7.so
+OCPI(10:779.0699):  Instance  1: Container: 0 Instance capture_v2/a/capture_v2 in /home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.capture_v2_only_mpcie_base.hdl.0.mpcie.gz
+OCPI(10:779.0699): Setting BEST
+OCPI(10:779.0699): doInstance container: cont 1 feasible 0x1
+OCPI(10:779.0699): instance 0x1f1fba8 used new container. best 0x2 curr 0 cont 1
+OCPI( 8:779.0699): Negotiating connection from instance file_read (in <none>) port out to instance capture_v2 (in <none>) port in (buffer size is 18446744073709551615/0xffffffffffffffff)
+OCPI(10:779.0699): Instance file_read (0) property fileName (0) named file_read.fileName
+OCPI(10:779.0699): Instance file_read (0) property messagesInFile (1) named file_read.messagesInFile
+OCPI(10:779.0699): Instance file_read (0) property opcode (2) named file_read.opcode
+OCPI(10:779.0699): Instance file_read (0) property messageSize (3) named file_read.messageSize
+OCPI(10:779.0699): Instance file_read (0) property granularity (4) named file_read.granularity
+OCPI(10:779.0699): Instance file_read (0) property repeat (5) named file_read.repeat
+OCPI(10:779.0699): Instance file_read (0) property bytesRead (6) named file_read.bytesRead
+OCPI(10:779.0699): Instance file_read (0) property messagesWritten (7) named file_read.messagesWritten
+OCPI(10:779.0699): Instance file_read (0) property suppressEOF (8) named file_read.suppressEOF
+OCPI(10:779.0699): Instance file_read (0) property badMessage (9) named file_read.badMessage
+OCPI(10:779.0699): Instance file_read (0) property ocpi_debug (10) named file_read.ocpi_debug
+OCPI(10:779.0699): Instance file_read (0) property ocpi_endian (11) named file_read.ocpi_endian
+OCPI(10:779.0699): Instance file_read (0) property ocpi_version (12) named file_read.ocpi_version
+OCPI(10:779.0699): Instance file_read (0) property ocpi_max_opcode_out (13) named file_read.ocpi_max_opcode_out
+OCPI(10:779.0699): Instance file_read (0) property ocpi_max_bytes_out (14) named file_read.ocpi_max_bytes_out
+OCPI(10:779.0699): Instance file_read (0) property ocpi_buffer_size_out (15) named file_read.ocpi_buffer_size_out
+OCPI(10:779.0699): Instance capture_v2 (1) property stopOnFull (0) named capture_v2.stopOnFull
+OCPI(10:779.0699): Instance capture_v2 (1) property metadataCount (1) named capture_v2.metadataCount
+OCPI(10:779.0699): Instance capture_v2 (1) property dataCount (2) named capture_v2.dataCount
+OCPI(10:779.0699): Instance capture_v2 (1) property numRecords (3) named capture_v2.numRecords
+OCPI(10:779.0699): Instance capture_v2 (1) property numDataWords (4) named capture_v2.numDataWords
+OCPI(10:779.0699): Instance capture_v2 (1) property numMetadataWords (5) named capture_v2.numMetadataWords
+OCPI(10:779.0699): Instance capture_v2 (1) property metaFull (6) named capture_v2.metaFull
+OCPI(10:779.0699): Instance capture_v2 (1) property dataFull (7) named capture_v2.dataFull
+OCPI(10:779.0699): Instance capture_v2 (1) property stopZLMOpcode (8) named capture_v2.stopZLMOpcode
+OCPI(10:779.0699): Instance capture_v2 (1) property stopOnZLM (9) named capture_v2.stopOnZLM
+OCPI(10:779.0699): Instance capture_v2 (1) property stopOnEOF (10) named capture_v2.stopOnEOF
+OCPI(10:779.0699): Instance capture_v2 (1) property metadata (11) named capture_v2.metadata
+OCPI(10:779.0699): Instance capture_v2 (1) property data (12) named capture_v2.data
+OCPI(10:779.0699): Instance capture_v2 (1) property ocpi_debug (13) named capture_v2.ocpi_debug
+OCPI(10:779.0699): Instance capture_v2 (1) property ocpi_endian (14) named capture_v2.ocpi_endian
+OCPI(10:779.0699): Instance capture_v2 (1) property ocpi_version (15) named capture_v2.ocpi_version
+OCPI(10:779.0699): Instance capture_v2 (1) property ocpi_max_opcode_in (16) named capture_v2.ocpi_max_opcode_in
+OCPI(10:779.0699): Instance capture_v2 (1) property ocpi_max_bytes_in (17) named capture_v2.ocpi_max_bytes_in
+OCPI(10:779.0699): Instance capture_v2 (1) property ocpi_max_opcode_out (18) named capture_v2.ocpi_max_opcode_out
+OCPI(10:779.0699): Instance capture_v2 (1) property ocpi_max_bytes_out (19) named capture_v2.ocpi_max_bytes_out
+OCPI(10:779.0699): Instance capture_v2 (1) property ocpi_buffer_size_out (20) named capture_v2.ocpi_buffer_size_out
+OCPI(10:779.0699): Instance capture_v2 (1) property ocpi_blocked_out (21) named capture_v2.ocpi_blocked_out
+OCPI(10:779.0699): Instance capture_v2 (1) property ocpi_max_latency_out (22) named capture_v2.ocpi_max_latency_out
+OCPI(10:779.0699): Instance capture_v2 (1) property ocpi_latency_out (23) named capture_v2.ocpi_latency_out
+Actual deployment is:
+  Instance  0 file_read (spec ocpi.core.file_read) on rcc container 1: rcc0, using file_read in /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.file_read.rcc.0.centos7.so dated Mon Mar 11 17:50:37 2019
+  Instance  1 capture_v2 (spec ocpi.assets.util_comps.capture_v2) on hdl container 0: PCI:0000:03:00.0, using capture_v2/a/capture_v2 in /home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.capture_v2_only_mpcie_base.hdl.0.mpcie.gz dated Fri Apr  5 18:06:27 2019
+Application XML parsed and deployments (containers and artifacts) chosen
+OCPI(10:779.0699): Mapped 2 instances to 2 containers
+OCPI(10:779.0699): Entering (OCPI::RCC::Container::createApplication())
+OCPI(10:779.0699): Leaving (OCPI::RCC::Container::createApplication())
+OCPI( 8:779.0700): Negotiating connection from instance file_read (in rcc0) port out to instance capture_v2 (in PCI:0000:03:00.0) port in (buffer size is 8192/0x2000)
+OCPI( 8:779.0700): Negotiating connection from instance file_read port out to instance capture_v2 port in (buffer size is 8192/0x2000)
+OCPI(10:779.0700): Input container: PCI:0000:03:00.0, output container: rcc0
+OCPI(10:779.0700): Looking for transport (1 in, 3 out) for connection: 
+OCPI(10:779.0700): Considering input transport ocpi-dma-pio
+OCPI(10:779.0700): Considering output transport ocpi-dma-pio
+OCPI( 8:779.0700): Choosing transport ocpi-dma-pio id "c0:3f:d5:6f:92:f7" for connection with roles ActiveFlowControl(0x123)->ActiveMessage(0x21)
+OCPI( 8:779.0700): Loading RCC worker artifact /home/user/ocpi/opencpi_dev1_5_mcpi_sdp_son/projects/core/artifacts/ocpi.core.file_read.rcc.0.centos7.so
+OCPI(10:779.0700): Allocating 8 bytes of data for worker memory 0
+OCPI(10:779.0700): Setting the initial specified value of property 'fileName' of instance 'file_read'
+OCPI(10:779.0700): Setting the initial specified value of property 'messagesInFile' of instance 'file_read'
+OCPI(10:779.0700): Setting the initial specified value of property 'opcode' of instance 'file_read'
+OCPI(10:779.0700): Setting the initial specified value of property 'messageSize' of instance 'file_read'
+OCPI(10:779.0700): Setting the initial specified value of property 'granularity' of instance 'file_read'
+OCPI(10:779.0700): Setting the initial specified value of property 'ocpi_buffer_size_out' of instance 'file_read'
+OCPI(10:779.0700): UUID check: want 76cc46ca-57eb-11e9-93e3-932d8397d353 have 76cc46ca-57eb-11e9-93e3-932d8397d353
+OCPI( 8:779.0700): For HDL container PCI:0000:03:00.0, when loading bitstream /home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/artifacts/bsp.sidekiq_sdp.capture_v2_only_mpcie_base.hdl.0.mpcie.gz, uuid matches what is already loaded
+OCPI(10:779.0700): Timeout for capture_v2 is 16 log is 4
+OCPI(10:779.0700): set32RegisterOffset 0x7ff32792d000 24 4
+OCPI(10:779.0701): set32RegisterOffset 0x7ff32792d000 24 80000004
+OCPI( 8:779.0701): Deasserted reset on worker capture_v2.a/capture_v2
+OCPI(10:779.0701): get32RegisterOffset 0x7ff32792d000 20
+OCPI(10:779.0701): get32RegisterOffset 0x7ff32792d000 20 -> 1ff0000
+OCPI(10:779.0701): Checking control state for worker: status: 0x1ff0000
+OCPI( 8:779.0701): HDL Control Op Avoided worker capture_v2:a/capture_v2(2) op initialize(0)
+OCPI(10:779.0701): Setting the initial specified value of property 'stopOnFull' of instance 'capture_v2'
+OCPI(10:779.0701): get32RegisterOffset 0x7ff32792d000 20
+OCPI(10:779.0701): get32RegisterOffset 0x7ff32792d000 20 -> 1ff0000
+OCPI(10:779.0701): Checking control state for worker: status: 0x1ff0000
+OCPI(10:779.0701): set8RegisterOffset 0x7ff327c21000 0 0
+OCPI(10:779.0701): Setting the default value of property 'metaFull' of instance 'capture_v2'
+OCPI(10:779.0701): get32RegisterOffset 0x7ff32792d000 20
+OCPI(10:779.0701): get32RegisterOffset 0x7ff32792d000 20 -> 91f0000
+OCPI(10:779.0701): Checking control state for worker: status: 0x91f0000
+OCPI(10:779.0701): set8RegisterOffset 0x7ff327c21000 c 0
+OCPI(10:779.0701): Setting the default value of property 'dataFull' of instance 'capture_v2'
+OCPI(10:779.0701): get32RegisterOffset 0x7ff32792d000 20
+OCPI(10:779.0701): get32RegisterOffset 0x7ff32792d000 20 -> 91f0000
+OCPI(10:779.0701): Checking control state for worker: status: 0x91f0000
+OCPI(10:779.0701): set8RegisterOffset 0x7ff327c21000 d 0
+OCPI(10:779.0701): Setting the default value of property 'stopZLMOpcode' of instance 'capture_v2'
+OCPI(10:779.0701): get32RegisterOffset 0x7ff32792d000 20
+OCPI(10:779.0701): get32RegisterOffset 0x7ff32792d000 20 -> 92f0000
+OCPI(10:779.0701): Checking control state for worker: status: 0x92f0000
+OCPI(10:779.0701): set8RegisterOffset 0x7ff327c21000 e 0
+OCPI(10:779.0701): Setting the default value of property 'stopOnZLM' of instance 'capture_v2'
+OCPI(10:779.0701): get32RegisterOffset 0x7ff32792d000 20
+OCPI(10:779.0701): get32RegisterOffset 0x7ff32792d000 20 -> 94f0000
+OCPI(10:779.0701): Checking control state for worker: status: 0x94f0000
+OCPI(10:779.0701): set8RegisterOffset 0x7ff327c21000 f 0
+OCPI(10:779.0701): Setting the default value of property 'stopOnEOF' of instance 'capture_v2'
+OCPI(10:779.0701): get32RegisterOffset 0x7ff32792d000 20
+OCPI(10:779.0701): get32RegisterOffset 0x7ff32792d000 20 -> 98f0000
+OCPI(10:779.0701): Checking control state for worker: status: 0x98f0000
+OCPI(10:779.0701): set8RegisterOffset 0x7ff327c21000 10 1
+OCPI(10:779.0701): Setting the default value of property 'ocpi_buffer_size_out' of instance 'capture_v2'
+OCPI(10:779.0701): get32RegisterOffset 0x7ff32792d000 20
+OCPI(10:779.0701): get32RegisterOffset 0x7ff32792d000 20 -> 91f0000
+OCPI(10:779.0701): Checking control state for worker: status: 0x91f0000
+OCPI(10:779.0701): set16RegisterOffset 0x7ff327c21000 12 0
+OCPI(10:779.0701): PortData in(0x2000840): setting buffer size from default: 2048
+OCPI(10:779.0701): PortData final nbuffers 2 bufsize 2048
+OCPI(10:779.0701): Timeout for sdp_receive is 16 log is 4
+OCPI(10:779.0701): set32RegisterOffset 0x7ff327931000 24 4
+OCPI(10:779.0701): set32RegisterOffset 0x7ff327931000 24 80000004
+OCPI( 8:779.0701): Deasserted reset on worker sdp_receive.c/mpcie_sdp_receive0_0
+OCPI(10:779.0701): Set OCPI_MAX_MAILBOX environment variable to control max mailbox
+OCPI(10:779.0701): Set OCPI_TRANSFER_MAILBOX environment variable to control mailbox
+OCPI(10:779.0701): Transfer factory 0x1ed8f10 returning mailbox 1
+OCPI(10:779.0701): DMA ep 0x2000c40 0xf0000000.0x4000000.0x4000000: address = 0xf0000000 size = 0x4100000 hole 0x4000000 end 0x4000000
+OCPI(10:779.0701): DMA create remote/remote ep 0x2000c40 : address = 0xf0000000 busaddr = 0xf0000000 size = 0x4100000 hole 0x4000000 end 0x4000000
+OCPI( 8:779.0701): Dataplane endpoint 0x2000c40 created: ocpi-dma-pio:0xf0000000.0x4000000.0x4000000;9f36a110-5a42-11e9-a299-0f95763de0e5.68157440.1.10
+OCPI( 9:779.0701): Incrementing refcount on ep 0x2000c40 to 1
+OCPI( 9:779.0701): Incrementing refcount on ep 0x2000c40 to 2
+OCPI(10:779.0701): get32RegisterOffset 0x7ff327d21000 0
+OCPI(10:779.0701): get32RegisterOffset 0x7ff327d21000 0 -> 10000
+OCPI(10:779.0701): get8RegisterOffset 0x7ff327d21000 9
+OCPI(10:779.0701): get8RegisterOffset 0x7ff327d21000 9 -> 0
+OCPI(10:779.0701): get8RegisterOffset 0x7ff327d21000 6
+OCPI(10:779.0701): get8RegisterOffset 0x7ff327d21000 6 -> 0
+OCPI(10:779.0701): get8RegisterOffset 0x7ff327d21000 9
+OCPI(10:779.0701): get8RegisterOffset 0x7ff327d21000 9 -> 0
+OCPI(10:779.0701): SDP ID: 0:0x0
+OCPI( 8:779.0701): Input remote doorbell is 92
+OCPI(10:779.0701): Entering ( OCPI::RCC::Worker::createPort())
+OCPI(10:779.0701): PortData out(0x2000f50): setting buffer size from default: 2048
+OCPI(10:779.0701): PortData final nbuffers 2 bufsize 2048
+OCPI(10:779.0701): Setting nbuffers from parameters on "out" to 4
+OCPI(10:779.0701): Leaving ( OCPI::RCC::Worker::createPort())
+OCPI(10:779.0701): get8RegisterOffset 0x7ff327d21000 4
+OCPI(10:779.0701): get8RegisterOffset 0x7ff327d21000 4 -> 1
+OCPI(10:779.0701): In Transport::addRemoteEndPoint, loc = ocpi-dma-pio:0xf0000000.0x4000000.0x4000000;9f36a110-5a42-11e9-a299-0f95763de0e5.68157440.1.10
+OCPI(10:779.0701): Finalize endpoint 0x2000c40 ocpi-dma-pio:0xf0000000.0x4000000.0x4000000;9f36a110-5a42-11e9-a299-0f95763de0e5.68157440.1.10 (nil) (nil) (nil) 0 0
+OCPI( 9:779.0701): Incrementing refcount on ep 0x2000c40 to 3
+OCPI(10:779.0701): Transfer factory 0x1ed8f10 returning mailbox 2
+OCPI(10:779.0701): DMA create local/local ep 0x20012d0 : address = 0x0 busaddr = 0x0 size = 0x6400000 hole 0x0 end 0x0
+OCPI( 8:779.0701): Dataplane endpoint 0x20012d0 created: ocpi-dma-pio:0.0.0;9f36af66-5a42-11e9-86ea-abfbe399fdb5.104857600.2.10
+OCPI( 9:779.0701): Incrementing refcount on ep 0x20012d0 to 1
+OCPI( 9:779.0701): Incrementing refcount on ep 0x20012d0 to 2
+OCPI(10:779.0702): For ep 0x20012d0, offset 0x0 size 104857600 vaddr is 0x7ff319c00000 to 0x7ff320000000 @ 0xc1f4a000
+OCPI(10:779.0702): Finalized local DMA ep 0x20012d0: ocpi-dma-pio:0.0.0;9f36af66-5a42-11e9-86ea-abfbe399fdb5.104857600.2.10
+OCPI(10:779.0702): Finalize endpoint 0x20012d0 ocpi-dma-pio:0.0.0;9f36af66-5a42-11e9-86ea-abfbe399fdb5.104857600.2.10 0x2001480 0x2000de0 (nil) 1 0
+OCPI(10:779.0702):  In Circuit::Circuit() this 0x2002060 id is 0x6f2e40d8
+OCPI(10:779.0707): **** In PortSet::PortSet() 0x200ecf0
+OCPI(10:779.0707): **** PortSet::update: 0x200ecf0 size = 1
+OCPI(10:779.0707): **** In OCPI::DataTransport::Port::Port(): 0x201b780
+OCPI(10:779.0707): **** Alloc Port 0x201b780 for initialize local offsets shadow 0 circuit 0x2002060: 16
+OCPI(10:779.0707): DMA::SmemServices::map returning local vaddr = 0x7ff319c00010 base 0x7ff319c00000/(nil) offset 0x10 size 224, end 0x0x7ff319c000f0
+OCPI(10:779.0707): Number of buffers = 4
+OCPI(10:779.0707): Port::CreateBuffers1: port 0x201b780 bmd 0x7ff319c00010 offset 0x0
+OCPI(10:779.0707): **** Alloc Port 0x201b780 for createOutputOffsets local buffers 256
+OCPI(10:779.0707): Port::createOutputOffsets1: port 0x201b780 bmd 0x7ff319c00010 offset 0x0
+OCPI(10:779.0707): Port 0x201b780 bmd 0x7ff319c00010 count 4 boffset 100
+OCPI(10:779.0707): Port::createOutputOffsets2: port 0x201b780 bmd 0x7ff319c00010 offset 0x100
+OCPI(10:779.0707): **** Alloc Port 0x201b780 for createOutputOffsets local state
+OCPI(10:779.0707): **** Alloc Port 0x201b780 for createOutputOffsets local metadata
+OCPI(10:779.0707): **** Alloc Port 0x201b780 for createOutputOffsets local outputportsetcontrol
+OCPI(10:779.0707): Port::CreateBuffers2: port 0x201b780 bmd 0x7ff319c00010 offset 0x100
+OCPI(10:779.0707): OutputBuffer: port 0x201b780 bmd 0x7ff319c00010 offset 0x100
+OCPI(10:779.0707): Output buffer update: 0x2028380 (casted 0x2028380) tid 0 mbv (nil) bo 256
+OCPI(10:779.0707): OutputBuffer:update: port 0x201b780 bmd 0x7ff319c00010 mapping buffer 0x2028380 tid 0 offset 0x100 at 0x7ff319c00010
+OCPI(10:779.0707): DMA::SmemServices::map returning local vaddr = 0x7ff319c00100 base 0x7ff319c00000/(nil) offset 0x100 size 8192, end 0x0x7ff319c02100
+OCPI(10:779.0707): OutputBuffer:0x2028380 update: mapping states
+OCPI(10:779.0707): DMA::SmemServices::map returning local vaddr = 0x7ff319c08100 base 0x7ff319c00000/(nil) offset 0x8100 size 80, end 0x0x7ff319c08150
+OCPI(10:779.0707): OutputBuffer:update: mapping metadata
+OCPI(10:779.0707): DMA::SmemServices::map returning local vaddr = 0x7ff319c08280 base 0x7ff319c00000/(nil) offset 0x8280 size 1760, end 0x0x7ff319c08960
+OCPI(10:779.0707): OutputBuffer: mapping control structure
+OCPI(10:779.0707): DMA::SmemServices::map returning local vaddr = 0x7ff319c09e00 base 0x7ff319c00000/(nil) offset 0x9e00 size 16, end 0x0x7ff319c09e10
+OCPI(10:779.0707): m_bcsVaddr 0x7ff319c09e00, portSetControlOffset 40448
+OCPI(10:779.0707): Output buffer update: 0x2028380 (casted 0x2028380) tid 0 mbv 0x7ff319c00100 bo 256
+OCPI(10:779.0707): OutputBuffer: port 0x201b780 bmd 0x7ff319c00010 offset 0x100
+OCPI(10:779.0707): Output buffer update: 0x2034d40 (casted 0x2034d40) tid 1 mbv (nil) bo 8448
+OCPI(10:779.0707): OutputBuffer:update: port 0x201b780 bmd 0x7ff319c00010 mapping buffer 0x2034d40 tid 1 offset 0x2100 at 0x7ff319c00048
+OCPI(10:779.0707): DMA::SmemServices::map returning local vaddr = 0x7ff319c02100 base 0x7ff319c00000/(nil) offset 0x2100 size 8192, end 0x0x7ff319c04100
+OCPI(10:779.0707): OutputBuffer:0x2034d40 update: mapping states
+OCPI(10:779.0707): DMA::SmemServices::map returning local vaddr = 0x7ff319c08150 base 0x7ff319c00000/(nil) offset 0x8150 size 80, end 0x0x7ff319c081a0
+OCPI(10:779.0707): OutputBuffer:update: mapping metadata
+OCPI(10:779.0707): DMA::SmemServices::map returning local vaddr = 0x7ff319c08960 base 0x7ff319c00000/(nil) offset 0x8960 size 1760, end 0x0x7ff319c09040
+OCPI(10:779.0707): OutputBuffer: mapping control structure
+OCPI(10:779.0707): DMA::SmemServices::map returning local vaddr = 0x7ff319c09e00 base 0x7ff319c00000/(nil) offset 0x9e00 size 16, end 0x0x7ff319c09e10
+OCPI(10:779.0707): m_bcsVaddr 0x7ff319c09e00, portSetControlOffset 40448
+OCPI(10:779.0707): Output buffer update: 0x2034d40 (casted 0x2034d40) tid 1 mbv 0x7ff319c02100 bo 8448
+OCPI(10:779.0707): OutputBuffer: port 0x201b780 bmd 0x7ff319c00010 offset 0x100
+OCPI(10:779.0707): Output buffer update: 0x2041790 (casted 0x2041790) tid 2 mbv (nil) bo 16640
+OCPI(10:779.0707): OutputBuffer:update: port 0x201b780 bmd 0x7ff319c00010 mapping buffer 0x2041790 tid 2 offset 0x4100 at 0x7ff319c00080
+OCPI(10:779.0707): DMA::SmemServices::map returning local vaddr = 0x7ff319c04100 base 0x7ff319c00000/(nil) offset 0x4100 size 8192, end 0x0x7ff319c06100
+OCPI(10:779.0707): OutputBuffer:0x2041790 update: mapping states
+OCPI(10:779.0707): DMA::SmemServices::map returning local vaddr = 0x7ff319c081a0 base 0x7ff319c00000/(nil) offset 0x81a0 size 80, end 0x0x7ff319c081f0
+OCPI(10:779.0707): OutputBuffer:update: mapping metadata
+OCPI(10:779.0707): DMA::SmemServices::map returning local vaddr = 0x7ff319c09040 base 0x7ff319c00000/(nil) offset 0x9040 size 1760, end 0x0x7ff319c09720
+OCPI(10:779.0707): OutputBuffer: mapping control structure
+OCPI(10:779.0707): DMA::SmemServices::map returning local vaddr = 0x7ff319c09e00 base 0x7ff319c00000/(nil) offset 0x9e00 size 16, end 0x0x7ff319c09e10
+OCPI(10:779.0707): m_bcsVaddr 0x7ff319c09e00, portSetControlOffset 40448
+OCPI(10:779.0707): Output buffer update: 0x2041790 (casted 0x2041790) tid 2 mbv 0x7ff319c04100 bo 16640
+OCPI(10:779.0707): OutputBuffer: port 0x201b780 bmd 0x7ff319c00010 offset 0x100
+OCPI(10:779.0707): Output buffer update: 0x204e1e0 (casted 0x204e1e0) tid 3 mbv (nil) bo 24832
+OCPI(10:779.0707): OutputBuffer:update: port 0x201b780 bmd 0x7ff319c00010 mapping buffer 0x204e1e0 tid 3 offset 0x6100 at 0x7ff319c000b8
+OCPI(10:779.0707): DMA::SmemServices::map returning local vaddr = 0x7ff319c06100 base 0x7ff319c00000/(nil) offset 0x6100 size 8192, end 0x0x7ff319c08100
+OCPI(10:779.0707): OutputBuffer:0x204e1e0 update: mapping states
+OCPI(10:779.0707): DMA::SmemServices::map returning local vaddr = 0x7ff319c081f0 base 0x7ff319c00000/(nil) offset 0x81f0 size 80, end 0x0x7ff319c08240
+OCPI(10:779.0707): OutputBuffer:update: mapping metadata
+OCPI(10:779.0707): DMA::SmemServices::map returning local vaddr = 0x7ff319c09720 base 0x7ff319c00000/(nil) offset 0x9720 size 1760, end 0x0x7ff319c09e00
+OCPI(10:779.0707): OutputBuffer: mapping control structure
+OCPI(10:779.0707): DMA::SmemServices::map returning local vaddr = 0x7ff319c09e00 base 0x7ff319c00000/(nil) offset 0x9e00 size 16, end 0x0x7ff319c09e10
+OCPI(10:779.0707): m_bcsVaddr 0x7ff319c09e00, portSetControlOffset 40448
+OCPI(10:779.0707): Output buffer update: 0x204e1e0 (casted 0x204e1e0) tid 3 mbv 0x7ff319c06100 bo 24832
+OCPI(10:779.0707): **** New Port 0x201b780 index 0
+OCPI(10:779.0707): **** Circuit::Circuit: 0x2002060 po = 1
+OCPI(10:779.0707): New circuit created and registered: id 6f2e40d8 flags 0
+OCPI(10:779.0707): << Input port Full buffer flag = 0x1 >>
+OCPI(10:779.0707): Remote port buffer ep = ocpi-dma-pio:0xf0000000.0x4000000.0x4000000;9f36a110-5a42-11e9-a299-0f95763de0e5.68157440.1.10
+OCPI(10:779.0707): **** In PortSet::PortSet() 0x205b730
+OCPI(10:779.0707): **** PortSet::update: 0x205b730 size = 1
+OCPI(10:779.0707): **** In OCPI::DataTransport::Port::Port(): 0x2068130
+OCPI(10:779.0707): **** Alloc Port 0x2068130 for initialize local offsets shadow 1 circuit 0x2002060: 40464
+OCPI(10:779.0707): DMA::SmemServices::map returning local vaddr = 0x7ff319c09e10 base 0x7ff319c00000/(nil) offset 0x9e10 size 112, end 0x0x7ff319c09e80
+OCPI(10:779.0707): Number of buffers = 2
+OCPI(10:779.0707): Port::CreateBuffers1: port 0x2068130 bmd 0x7ff319c09e10 offset 0x4000000
+OCPI(10:779.0707): **** Alloc Port 0x2068130 for createInputffsets shadow state
+OCPI(10:779.0707): Port::CreateBuffers2: port 0x2068130 bmd 0x7ff319c09e10 offset 0x4000000
+OCPI(10:779.0707): InputBuffer:update:start
+OCPI(10:779.0707): InputBuffer:update: mapping shadows
+OCPI(10:779.0707): DMA::SmemServices::map returning local vaddr = 0x7ff319c09e80 base 0x7ff319c00000/(nil) offset 0x9e80 size 4, end 0x0x7ff319c09e84
+OCPI(10:779.0707): Requested Emptyflag port value = 0x1
+OCPI(10:779.0707): InputBuffer:update: map returned 0x7ff319c09e80
+OCPI(10:779.0707): InputBuffer:update:finish
+OCPI(10:779.0707): InputBuffer:update:start
+OCPI(10:779.0707): InputBuffer:update:finish
+OCPI(10:779.0707): InputBuffer:update:start
+OCPI(10:779.0707): InputBuffer:update: mapping shadows
+OCPI(10:779.0707): DMA::SmemServices::map returning local vaddr = 0x7ff319c09e84 base 0x7ff319c00000/(nil) offset 0x9e84 size 4, end 0x0x7ff319c09e88
+OCPI(10:779.0707): Requested Emptyflag port value = 0x1
+OCPI(10:779.0707): InputBuffer:update: map returned 0x7ff319c09e84
+OCPI(10:779.0707): InputBuffer:update:finish
+OCPI(10:779.0707): InputBuffer:update:start
+OCPI(10:779.0707): InputBuffer:update:finish
+OCPI(10:779.0707): **** New Port 0x2068130 index 0
+OCPI(10:779.0707): In Transport::addRemoteEndPoint, loc = ocpi-dma-pio:0xf0000000.0x4000000.0x4000000;9f36a110-5a42-11e9-a299-0f95763de0e5.68157440.1.10
+OCPI( 9:779.0707): Incrementing refcount on ep 0x20012d0 to 3
+OCPI( 9:779.0707): Incrementing refcount on ep 0x2000c40 to 4
+OCPI(10:779.0707): DMA::SmemServices::map returning local vaddr = 0x7ff319c00000 base 0x7ff319c00000/(nil) offset 0x0 size 0, end 0x0x7ff319c00000
+OCPI(10:779.0708): For ep 0x2000c40, offset 0x0 size 67108864 vaddr is 0x7ff315c00000 to 0x7ff319c00000 @ 0xf0000000
+OCPI(10:779.0708): For ep 0x2000c40, offset 0x4000000 size 1048576 vaddr is 0x7ff32593b000 to 0x7ff325a3b000 @ 0xf0000000
+OCPI(10:779.0708): dma ep 0x2000c40 has vaddr 0x7ff315c00000 to 0x7ff319c00000, vaddr1 0x7ff32593b000 to 0x7ff325a3b000
+OCPI(10:779.0708): DMA::SmemServices::map returning remote vaddr = 0x7ff315c00000 base 0x7ff315c00000/0x7ff32593b000 offset 0x0 size 0, end 0x0x7ff315c00000
+OCPI(10:779.0708): Template src_va 0x7ff319c00000 dst_va 0x7ff315c00000
+OCPI(10:779.0708): getPortDescriptor 0x201b780: setting output buffer size to 8192
+OCPI(10:779.0708): Full flag value = 0x1
+OCPI(10:779.0708): finishConnect enter on 'out' other 0x2000858 dtport 0x201b780
+OCPI(10:779.0708): In Transport::addRemoteEndPoint, loc = ocpi-dma-pio:0xf0000000.0x4000000.0x4000000;9f36a110-5a42-11e9-a299-0f95763de0e5.68157440.1.10
+OCPI(10:779.0708): getPortDescriptor 0x201b780: setting output buffer size to 8192
+OCPI(10:779.0708): Full flag value = 0x1
+OCPI(10:779.0708): Circuit output 0x2002060 is closed
+OCPI(10:779.0708): Circuit 6f2e40d8 is READY
+OCPI(10:779.0708): output port role = 1
+OCPI(10:779.0708): input port role = 0
+OCPI(10:779.0709): s port endpoints = ocpi-dma-pio:0.0.0;9f36af66-5a42-11e9-86ea-abfbe399fdb5.104857600.2.10, ocpi-dma-pio:0.0.0;9f36af66-5a42-11e9-86ea-abfbe399fdb5.104857600.2.10, ocpi-dma-pio:0.0.0;9f36af66-5a42-11e9-86ea-abfbe399fdb5.104857600.2.10
+OCPI(10:779.0709): output port id = 0, buffer id = 0, input id = 0
+OCPI(10:779.0709): Template address = 0x208ef30
+OCPI(10:779.0709): Number of input ports = 1
+OCPI(10:779.0709): DMA::SmemServices::map returning local vaddr = 0x7ff319c08100 base 0x7ff319c00000/(nil) offset 0x8100 size 4, end 0x0x7ff319c08104
+OCPI(10:779.0709): DMA::SmemServices::map returning remote vaddr = 0x7ff31600005c base 0x7ff315c00000/0x7ff32593b000 offset 0x40005c size 4, end 0x0x7ff316000060
+OCPI(10:779.0709): xfer_pio_copy: dst_va: 0x7ff31600005c
+OCPI(10:779.0709): output port id = 0, buffer id = 0, input id = 1
+OCPI(10:779.0709): Template address = 0x20903e0
+OCPI(10:779.0709): Number of input ports = 1
+OCPI(10:779.0709): DMA::SmemServices::map returning local vaddr = 0x7ff319c08100 base 0x7ff319c00000/(nil) offset 0x8100 size 4, end 0x0x7ff319c08104
+OCPI(10:779.0709): DMA::SmemServices::map returning remote vaddr = 0x7ff31600005c base 0x7ff315c00000/0x7ff32593b000 offset 0x40005c size 4, end 0x0x7ff316000060
+OCPI(10:779.0709): xfer_pio_copy: dst_va: 0x7ff31600005c
+OCPI(10:779.0709): output port id = 0, buffer id = 1, input id = 0
+OCPI(10:779.0709): Template address = 0x2091930
+OCPI(10:779.0709): Number of input ports = 1
+OCPI(10:779.0709): DMA::SmemServices::map returning local vaddr = 0x7ff319c08150 base 0x7ff319c00000/(nil) offset 0x8150 size 4, end 0x0x7ff319c08154
+OCPI(10:779.0709): DMA::SmemServices::map returning remote vaddr = 0x7ff31600005c base 0x7ff315c00000/0x7ff32593b000 offset 0x40005c size 4, end 0x0x7ff316000060
+OCPI(10:779.0709): xfer_pio_copy: dst_va: 0x7ff31600005c
+OCPI(10:779.0709): output port id = 0, buffer id = 1, input id = 1
+OCPI(10:779.0938): Template address = 0x2092ee0
+OCPI(10:779.0938): Number of input ports = 1
+OCPI(10:779.0938): DMA::SmemServices::map returning local vaddr = 0x7ff319c08150 base 0x7ff319c00000/(nil) offset 0x8150 size 4, end 0x0x7ff319c08154
+OCPI(10:779.0938): DMA::SmemServices::map returning remote vaddr = 0x7ff31600005c base 0x7ff315c00000/0x7ff32593b000 offset 0x40005c size 4, end 0x0x7ff316000060
+OCPI(10:779.0938): xfer_pio_copy: dst_va: 0x7ff31600005c
+OCPI(10:779.0938): output port id = 0, buffer id = 2, input id = 0
+OCPI(10:779.0938): Template address = 0x2094490
+OCPI(10:779.0938): Number of input ports = 1
+OCPI(10:779.0938): DMA::SmemServices::map returning local vaddr = 0x7ff319c081a0 base 0x7ff319c00000/(nil) offset 0x81a0 size 4, end 0x0x7ff319c081a4
+OCPI(10:779.0938): DMA::SmemServices::map returning remote vaddr = 0x7ff31600005c base 0x7ff315c00000/0x7ff32593b000 offset 0x40005c size 4, end 0x0x7ff316000060
+OCPI(10:779.0938): xfer_pio_copy: dst_va: 0x7ff31600005c
+OCPI(10:779.0938): output port id = 0, buffer id = 2, input id = 1
+OCPI(10:779.0938): Template address = 0x2095a40
+OCPI(10:779.0938): Number of input ports = 1
+OCPI(10:779.0938): DMA::SmemServices::map returning local vaddr = 0x7ff319c081a0 base 0x7ff319c00000/(nil) offset 0x81a0 size 4, end 0x0x7ff319c081a4
+OCPI(10:779.0938): DMA::SmemServices::map returning remote vaddr = 0x7ff31600005c base 0x7ff315c00000/0x7ff32593b000 offset 0x40005c size 4, end 0x0x7ff316000060
+OCPI(10:779.0938): xfer_pio_copy: dst_va: 0x7ff31600005c
+OCPI(10:779.0938): output port id = 0, buffer id = 3, input id = 0
+OCPI(10:779.0938): Template address = 0x2096ff0
+OCPI(10:779.0938): Number of input ports = 1
+OCPI(10:779.0938): DMA::SmemServices::map returning local vaddr = 0x7ff319c081f0 base 0x7ff319c00000/(nil) offset 0x81f0 size 4, end 0x0x7ff319c081f4
+OCPI(10:779.0938): DMA::SmemServices::map returning remote vaddr = 0x7ff31600005c base 0x7ff315c00000/0x7ff32593b000 offset 0x40005c size 4, end 0x0x7ff316000060
+OCPI(10:779.0938): xfer_pio_copy: dst_va: 0x7ff31600005c
+OCPI(10:779.0938): output port id = 0, buffer id = 3, input id = 1
+OCPI(10:779.0938): Template address = 0x20985a0
+OCPI(10:779.0938): Number of input ports = 1
+OCPI(10:779.0938): DMA::SmemServices::map returning local vaddr = 0x7ff319c081f0 base 0x7ff319c00000/(nil) offset 0x81f0 size 4, end 0x0x7ff319c081f4
+OCPI(10:779.0938): DMA::SmemServices::map returning remote vaddr = 0x7ff31600005c base 0x7ff315c00000/0x7ff32593b000 offset 0x40005c size 4, end 0x0x7ff316000060
+OCPI(10:779.0938): xfer_pio_copy: dst_va: 0x7ff31600005c
+OCPI(10:779.0938): t port endpoints = ocpi-dma-pio:0xf0000000.0x4000000.0x4000000;9f36a110-5a42-11e9-a299-0f95763de0e5.68157440.1.10, ocpi-dma-pio:0.0.0;9f36af66-5a42-11e9-86ea-abfbe399fdb5.104857600.2.10, ocpi-dma-pio:0.0.0;9f36af66-5a42-11e9-86ea-abfbe399fdb5.104857600.2.10
+OCPI(10:779.0938): Port out(0) of worker file_read is now connected
+OCPI(10:779.0938): Worker 'file_read', port 0 is connected
+OCPI(10:779.0938): finishConnect exit on 'out' rv 0x2000f68 done 1
+OCPI(10:779.0938): set8RegisterOffset 0x7ff327d21000 10 2
+OCPI(10:779.0938): set32RegisterOffset 0x7ff327d21000 c 2000
+OCPI(10:779.0938): set8RegisterOffset 0x7ff327d21000 1c 0
+OCPI(10:779.0938): finishConnection: other = c1f4a000, offset = 8100, RFB = c1f52100
+OCPI(10:779.0938): Other ep = ocpi-dma-pio:0.0.0;9f36af66-5a42-11e9-86ea-abfbe399fdb5.104857600.2.10, myrole is 0
+OCPI(10:779.0939): set32RegisterOffset 0x7ff327d21000 20 1
+OCPI(10:779.0939): set64RegisterOffset 0x7ff327d21000 28 c1f4a100
+OCPI(10:779.0939): set64RegisterOffset 0x7ff327d21000 38 c1f52280
+OCPI(10:779.0939): set64RegisterOffset 0x7ff327d21000 48 c1f52100
+OCPI(10:779.0939): set32RegisterOffset 0x7ff327d21000 30 2000
+OCPI(10:779.0939): set32RegisterOffset 0x7ff327d21000 40 6e0
+OCPI(10:779.0939): set32RegisterOffset 0x7ff327d21000 50 50
+OCPI(10:779.0939): set32RegisterOffset 0x7ff327d21000 54 0
+OCPI(10:779.0939): set8RegisterOffset 0x7ff327d21000 58 4
+OCPI(10:779.0939): finishConnection: me = f0000000, offset = 40005c, RFB = f040005c
+OCPI(10:779.0939): My ep = ocpi-dma-pio:0xf0000000.0x4000000.0x4000000;9f36a110-5a42-11e9-a299-0f95763de0e5.68157440.1.10
+OCPI(10:779.0939): get32RegisterOffset 0x7ff327d21000 0
+OCPI(10:779.0939): get32RegisterOffset 0x7ff327d21000 0 -> 10000
+OCPI(10:779.0939): SDP memory_bytes 10000
+OCPI(10:779.0939): get8RegisterOffset 0x7ff327d21000 4
+OCPI(10:779.0939): get8RegisterOffset 0x7ff327d21000 4 -> 1
+OCPI(10:779.0939): SDP sdp_width 1
+OCPI(10:779.0939): get8RegisterOffset 0x7ff327d21000 9
+OCPI(10:779.0939): get8RegisterOffset 0x7ff327d21000 9 -> 0
+OCPI(10:779.0939): SDP sdp_id 0
+OCPI(10:779.0939): get32RegisterOffset 0x7ff327d21000 c
+OCPI(10:779.0939): get32RegisterOffset 0x7ff327d21000 c -> 2000
+OCPI(10:779.0939): SDP buffer_size 2000
+OCPI(10:779.0939): get8RegisterOffset 0x7ff327d21000 10
+OCPI(10:779.0939): get8RegisterOffset 0x7ff327d21000 10 -> 2
+OCPI(10:779.0939): SDP buffer_count 2
+OCPI(10:779.0939): get16RegisterOffset 0x7ff327d21000 12
+OCPI(10:779.0939): get16RegisterOffset 0x7ff327d21000 12 -> 0
+OCPI(10:779.0939): SDP segment_size 0
+OCPI(10:779.0939): get8RegisterOffset 0x7ff327d21000 14
+OCPI(10:779.0939): get8RegisterOffset 0x7ff327d21000 14 -> 0
+OCPI(10:779.0939): SDP overflow 0
+OCPI(10:779.0939): get64RegisterOffset 0x7ff327d21000 28
+OCPI(10:779.0939): get64RegisterOffset 0x7ff327d21000 28 -> c1f4a100
+OCPI(10:779.0939): SDP remote_data_addr c1f4a100
+OCPI( 8:779.0939): HDL Control Op Avoided worker sdp_receive:c/mpcie_sdp_receive0_0(3) op initialize(0)
+OCPI(10:779.0939): get32RegisterOffset 0x7ff327931000 4
+OCPI(10:779.0939): get32RegisterOffset 0x7ff327931000 4 -> c0de4201
+OCPI( 8:779.0939): HDL Control Op Succeeded: worker sdp_receive:c/mpcie_sdp_receive0_0(3) op start(1)
+OCPI(10:779.0939): Port in(0) of worker capture_v2 is now connected
+Application established: containers, workers, connections all created
+Communication with the application established
+Dump of all initial property values:
+Property  0: file_read.fileName = "test.input" (cached)
+Property  1: file_read.messagesInFile = "false" (cached)
+Property  2: file_read.opcode = "0" (cached)
+Property  3: file_read.messageSize = "16"
+Property  4: file_read.granularity = "4" (cached)
+Property  5: file_read.repeat = "false"
+Property  6: file_read.bytesRead = "0"
+Property  7: file_read.messagesWritten = "0"
+Property  8: file_read.suppressEOF = "false"
+Property  9: file_read.badMessage = "false"
+Property 10: file_read.ocpi_debug = "false" (parameter)
+Property 11: file_read.ocpi_endian = "little" (parameter)
+Property 16: capture_v2.stopOnFull = "false" (cached)
+OCPI(10:779.0940): get32RegisterOffset 0x7ff327c21000 4
+OCPI(10:779.0940): get32RegisterOffset 0x7ff327c21000 4 -> 0
+Property 17: capture_v2.metadataCount = "0"
+OCPI(10:779.0940): get32RegisterOffset 0x7ff327c21000 8
+OCPI(10:779.0940): get32RegisterOffset 0x7ff327c21000 8 -> 0
+Property 18: capture_v2.dataCount = "0"
+Property 19: capture_v2.numRecords = "256" (parameter)
+Property 20: capture_v2.numDataWords = "1024" (parameter)
+Property 21: capture_v2.numMetadataWords = "4" (parameter)
+OCPI(10:779.0940): get8RegisterOffset 0x7ff327c21000 c
+OCPI(10:779.0940): get8RegisterOffset 0x7ff327c21000 c -> 0
+Property 22: capture_v2.metaFull = "false"
+OCPI(10:779.0940): get8RegisterOffset 0x7ff327c21000 d
+OCPI(10:779.0940): get8RegisterOffset 0x7ff327c21000 d -> 0
+Property 23: capture_v2.dataFull = "false"
+Property 24: capture_v2.stopZLMOpcode = "0" (cached)
+Property 25: capture_v2.stopOnZLM = "false" (cached)
+Property 26: capture_v2.stopOnEOF = "true" (cached)
+OCPI(10:779.0940): getBytesRegisterOffset 0x7ff327c21000 1c sz 1000
+Property 27: capture_v2.metadata = "{0,1262197265,1262197265,1865},{0}"
+OCPI(10:779.0947): getBytesRegisterOffset 0x7ff327c21000 101c sz 1000
+Property 28: capture_v2.data = "0"
+Property 29: capture_v2.ocpi_debug = "false" (parameter)
+Property 30: capture_v2.ocpi_endian = "little" (parameter)
+OCPI(10:779.0952): get16RegisterOffset 0x7ff327c21000 18
+OCPI(10:779.0952): get16RegisterOffset 0x7ff327c21000 18 -> 0
+OCPI(10:779.0952): Using 2 containers to support the application
+OCPI(10:779.0952): Starting master workers that are not slaves and not sources.
+OCPI(10:779.0952): Starting master workers that are also slaves, but not sources.
+OCPI(10:779.0952): Starting workers that are not masters and not sources.
+OCPI( 8:779.0952): Starting worker: capture_v2 in container PCI:0000:03:00.0 from capture_v2/a/capture_v2
+OCPI(10:779.0952): get32RegisterOffset 0x7ff32792d000 20
+OCPI(10:779.0952): get32RegisterOffset 0x7ff32792d000 20 -> 1ff0000
+OCPI(10:779.0952): Checking control state for worker: status: 0x1ff0000
+OCPI(10:779.0952): get32RegisterOffset 0x7ff32792d000 4
+OCPI(10:779.0953): get32RegisterOffset 0x7ff32792d000 4 -> c0de4201
+OCPI( 8:779.0953): HDL Control Op Succeeded: worker capture_v2:a/capture_v2(2) op start(1)
+OCPI(10:779.0953): Starting container PCI:0000:03:00.0(0): 0x1fa3408
+OCPI(10:779.0953): Starting workers that are sources.
+OCPI( 8:779.0953): Starting worker: file_read in container rcc0 from file_read/
+OCPI(10:779.0953): Starting container rcc0(1): 0x1f1e568
+Application started/running
+Waiting up to 3 seconds for application to finish
+OCPI( 8:779.0953): Waiting for "done" worker, "capture_v2", to finish
+OCPI(10:779.0953): get32RegisterOffset 0x7ff32792d000 20
+OCPI(10:779.0953): get32RegisterOffset 0x7ff32792d000 20 -> 1ff0800
+OCPI(10:779.0953): Checking control state for worker: status: 0x1ff0800
+OCPI(10:779.0953): get32RegisterOffset 0x7ff32792d000 20
+OCPI(10:779.0953): get32RegisterOffset 0x7ff32792d000 20 -> 1ff0800
+OCPI(10:779.0953): Checking control state for worker: status: 0x1ff0800
+OCPI(10:779.0953): Waiting1 for "done" worker! 0x1fa3408 1 1 4
+OCPI(10:779.0953): get32RegisterOffset 0x7ff32792d000 20
+OCPI(10:779.0953): get32RegisterOffset 0x7ff32792d000 20 -> 1ff0800
+OCPI(10:779.0953): Checking control state for worker: status: 0x1ff0800
+Application finished
+OCPI(10:779.0953): getEmptyBuffer: w 0x1f21ec0 p 0x2000f50 f (nil)
+OCPI(10:779.0953): Stopping master workers that are not slaves.
+OCPI(10:779.0953): Stopping master workers that are also slaves.
+OCPI(10:779.0953): Stopping workers that are not masters.
+OCPI( 8:779.0953): Stopping worker: file_read in container rcc0 from file_read/
+OCPI(10:779.0953): getNextEmptOutputBuffer: 0x2028380 0x7ff319c00100 8192
+OCPI(10:779.0953): Running worker "file_read/file_read"
+OCPI(10:779.0953): Sending buffer 0x7ff3100008c0: l 16 o 0 0 0 data 64ab90 0
+OCPI(10:779.0953): Putting 0x1f21ec0 port 0x2000f50 buffer 0x7ff3100008c0 (fwd (nil)) length 16
+OCPI(10:779.0953): Put words 64ab90 0 0 10 2000f50 0
+OCPI(10:779.0953): Put op 8 eof 9 data 10 direct 11 len 12 full 24
+OCPI( 9:779.0953): METAs: @0x7ff319c08280 10 0 1 400010 sz 16 176
+OCPI(10:779.0953): Sending buffer 0x2028380 on port 0x201b780 on circuit 0x2002060 length 16 op 0
+OCPI(10:779.0953): In TransferController1AFCShadow::produce
+OCPI(10:779.0953): Mark output buffer full: 0x7ff319c08100 before 1
+OCPI(10:779.0953): Mark output buffer full: after 0
+OCPI(10:779.0953): Producing 1 transfers
+OCPI(10:779.0953): POST: 0x208e910 (nil) (nil) 0x208e940
+OCPI(10:779.0953): XFER:0x0x7ff319c08100->0x0x7ff31600005c 1 0
+OCPI(10:779.0953): Putting (internal) on 0x2000f50(f (nil)) buffer 0x7ff3100008c0 length 16
+OCPI(10:779.0953): getEmptyBuffer: w 0x1f21ec0 p 0x2000f50 f (nil)
+OCPI(10:779.0953): getNextEmptOutputBuffer: 0x2034d40 0x7ff319c02100 8192
+OCPI( 8:779.0953): Stopping worker: capture_v2 in container PCI:0000:03:00.0 from capture_v2/a/capture_v2
+OCPI(10:779.0953): get32RegisterOffset 0x7ff32792d000 20
+OCPI(10:779.0953): get32RegisterOffset 0x7ff32792d000 20 -> 1ff0800
+OCPI(10:779.0953): Checking control state for worker: status: 0x1ff0800
+Dump of all final property values:
+Property  6: file_read.bytesRead = "16"
+Property  7: file_read.messagesWritten = "1"
+Property  9: file_read.badMessage = "false"
+OCPI(10:779.0953): get32RegisterOffset 0x7ff327c21000 4
+OCPI(10:779.0953): get32RegisterOffset 0x7ff327c21000 4 -> 1
+Property 17: capture_v2.metadataCount = "1"
+OCPI(10:779.0953): get32RegisterOffset 0x7ff327c21000 8
+OCPI(10:779.0953): get32RegisterOffset 0x7ff327c21000 8 -> 0
+Property 18: capture_v2.dataCount = "0"
+OCPI(10:779.0954): get8RegisterOffset 0x7ff327c21000 c
+OCPI(10:779.0954): get8RegisterOffset 0x7ff327c21000 c -> 0
+OCPI(10:779.0954): get8RegisterOffset 0x7ff327c21000 d
+OCPI(10:779.0954): get8RegisterOffset 0x7ff327c21000 d -> 0
+OCPI(10:779.0954): getBytesRegisterOffset 0x7ff327c21000 1c sz 1000
+Property 27: capture_v2.metadata = "{0,1983564416,1983564416,1903},{0}"
+OCPI(10:779.0959): getBytesRegisterOffset 0x7ff327c21000 101c sz 1000
+Property 28: capture_v2.data = "0"
+OCPI(10:779.0962): get16RegisterOffset 0x7ff327c21000 18
+OCPI(10:779.0962): get16RegisterOffset 0x7ff327c21000 18 -> 0
+OCPI(10:779.0962): In  Container::Port::~Port()
+OCPI(10:779.0962): **** In OCPI::DataTransport::Port::reset() 0x201b780
+OCPI(10:779.0962): Mark output buffer empty: 0x7ff319c08100 before 0
+OCPI(10:779.0962): Mark output buffer empty: after 1
+OCPI(10:779.0962): Mark output buffer empty: 0x7ff319c08150 before 1
+OCPI(10:779.0962): Mark output buffer empty: after 1
+OCPI(10:779.0962): Mark output buffer empty: 0x7ff319c081a0 before 1
+OCPI(10:779.0962): Mark output buffer empty: after 1
+OCPI(10:779.0962): Mark output buffer empty: 0x7ff319c081f0 before 1
+OCPI(10:779.0962): Mark output buffer empty: after 1
+OCPI(10:779.0962): **** Circuit::release() 0x2002060 count was 1
+OCPI(10:779.0962): **** Circuit::~Circuit: 0x2002060
+OCPI(10:779.0962): **** In PortSet::~PortSet() 0x205b730
+OCPI(10:779.0962): **** In OCPI::DataTransport::Port::~Port 0x2068130 init 1 output 0 md 0x205af80 mdshadow 1 shadow 1
+OCPI(10:779.0964): **** In PortSet::~PortSet() 0x200ecf0
+OCPI(10:779.0964): **** In OCPI::DataTransport::Port::~Port 0x201b780 init 1 output 1 md 0x2001870 mdshadow 0 shadow 0
+OCPI(10:779.0964): In  Container::Worker::~Worker()
+OCPI(10:779.0964): In  Container::Application::~Application()
+OCPI(10:779.0964): In  Container::Application::~Application()
+OCPI( 9:779.0964): Releasing ep 0x2000c40 ocpi-dma-pio:0xf0000000.0x4000000.0x4000000;9f36a110-5a42-11e9-a299-0f95763de0e5.68157440.1.10 refCount 4
+OCPI(10:779.0964): In  Container::Port::~Port()
+OCPI(10:779.0964): In  Container::Worker::~Worker()
+OCPI(10:779.0964): Entering ~HDL::Container()
+OCPI(10:779.0964): Leaving ~HDL::Container()
+OCPI(10:779.0964): Entering (OCPI::RCC::Container::~Container())
+OCPI( 8:779.0964): Container background thread for "rcc0" (0x1f1e568) exited
+OCPI(10:779.0964): Leaving (OCPI::RCC::Container::~Container())
+OCPI(10:779.0964): Transport 0x1f1e7b0 removing local ep 0x20012d0 ocpi-dma-pio:0.0.0;9f36af66-5a42-11e9-86ea-abfbe399fdb5.104857600.2.10
+OCPI( 9:779.0964): Releasing ep 0x20012d0 ocpi-dma-pio:0.0.0;9f36af66-5a42-11e9-86ea-abfbe399fdb5.104857600.2.10 refCount 3
+OCPI(10:779.0964): Transport 0x1f1e7b0 removing remote ep 0x2000c40 ocpi-dma-pio:0xf0000000.0x4000000.0x4000000;9f36a110-5a42-11e9-a299-0f95763de0e5.68157440.1.10
+OCPI( 9:779.0964): Releasing ep 0x2000c40 ocpi-dma-pio:0xf0000000.0x4000000.0x4000000;9f36a110-5a42-11e9-a299-0f95763de0e5.68157440.1.10 refCount 3
+OCPI( 9:779.0970): Releasing ep 0x2000c40 ocpi-dma-pio:0xf0000000.0x4000000.0x4000000;9f36a110-5a42-11e9-a299-0f95763de0e5.68157440.1.10 refCount 2
+OCPI( 9:779.0970): Releasing ep 0x20012d0 ocpi-dma-pio:0.0.0;9f36af66-5a42-11e9-86ea-abfbe399fdb5.104857600.2.10 refCount 2
+OCPI( 9:779.0970): Releasing ep 0x20012d0 ocpi-dma-pio:0.0.0;9f36af66-5a42-11e9-86ea-abfbe399fdb5.104857600.2.10 refCount 1
+OCPI( 8:779.0970): Dataplane endpoint 0x20012d0 destroyed: ocpi-dma-pio:0.0.0;9f36af66-5a42-11e9-86ea-abfbe399fdb5.104857600.2.10
+OCPI(10:779.0970): Memory pool is using 16 of 104857600 on deletion
+OCPI( 9:779.0970): Releasing ep 0x2000c40 ocpi-dma-pio:0xf0000000.0x4000000.0x4000000;9f36a110-5a42-11e9-a299-0f95763de0e5.68157440.1.10 refCount 1
+OCPI( 8:779.0970): Dataplane endpoint 0x2000c40 destroyed: ocpi-dma-pio:0xf0000000.0x4000000.0x4000000;9f36a110-5a42-11e9-a299-0f95763de0e5.68157440.1.10

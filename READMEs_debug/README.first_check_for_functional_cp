@@ -1,0 +1,79 @@
+[ 3649.729598] opencpi: loading out-of-tree module taints kernel.
+[ 3649.729670] opencpi: module verification failed: signature and/or required key missing - tainting kernel
+[ 3649.730215] opencpi: loading/initializing
+[ 3649.730234] opencpi: Allocating region for 5 devices
+[ 3649.730238] opencpi: adding char dev 243/0
+[ 3649.730242] opencpi: added char dev 243/0
+[ 3649.731241] opencpi: creating device in sysfs: ffff880402695800 kname 'ocpi=mem'
+[ 3649.731271] opencpi: pci probe
+[ 3649.731279] opencpi: at before enable cmd is 7
+[ 3649.731299] opencpi: at before request cmd is 7
+[ 3649.731307] opencpi: at before iomap cmd is 7
+[ 3649.731357] opencpi: Discovered opencpi PCI device 1 of 4, with good magic, at 0000:03:00.0
+[ 3649.731359] opencpi: adding char dev 243/1
+[ 3649.731361] opencpi: added char dev 243/1
+[ 3649.731362] opencpi: pci device name set to: nothing
+[ 3649.731411] opencpi: make_block: block ffff8800ce029ba0:    4000000 @ 00000000f0000000 type(0) c(0) pid(2901) prev(ffffffffc0ab5810) next(ffffffffc0ab5810) refcnt(1)
+[ 3649.731414] opencpi: make_block: block ffff8800ce029cc0:     100000 @ 00000000f4000000 type(0) c(0) pid(2901) prev(ffffffffc0ab5810) next(ffff8800ce029ba0) refcnt(1)
+[ 3649.731418] opencpi: at before drvdata cmd is 7
+[ 3649.731439] opencpi: parameters (opencpi_size = -1 (0xffffffffffffffff), opencpi_memmap = (null))
+[ 3649.731441] opencpi: memory request file           (null) 20000 -> 20000
+[ 3649.731443] opencpi: couldn't get allocation in first pass
+[ 3649.731447] opencpi: make_block: block ffff8800ce029f60:      20000 @ 00000003eda00000 type(2) c(0) pid(2901) prev(ffffffffc0ab5810) next(ffff8800ce029cc0) refcnt(1)
+[ 3649.731448] opencpi: allocated kernel pages: 20000 @ 00000003eda00000
+[ 3649.731450] opencpi: requested (20000) reserved 20000 @ 00000003eda00000
+[ 3649.731452] opencpi: Using allocated kernel memory size 20000
+[ 3649.731457] opencpi: driver loaded on device (243,0)
+[ 3875.142672] opencpi: unloading
+[ 3875.142675] opencpi: Cleanup entered
+[ 3875.160578] opencpi: pci removing minor device 1 at ffff8803f87ce6c0
+[ 3875.160580] opencpi: removing minor device 1
+[ 3875.160585] opencpi: release_block: block ffff8800ce029ba0:    4000000 @ 00000000f0000000 type(0) c(0) pid(2901) prev(ffff8800ce029cc0) next(ffffffffc0ab5810) refcnt(1)
+[ 3875.160589] opencpi: release_block: block ffff8800ce029cc0:     100000 @ 00000000f4000000 type(0) c(0) pid(2901) prev(ffff8800ce029f60) next(ffffffffc0ab5810) refcnt(1)
+[ 3875.160794] opencpi: at before iounmap cmd is 7
+[ 3875.160812] opencpi: at before release region cmd is 7
+[ 3875.160817] opencpi: at before disable cmd is 7
+[ 3875.160828] opencpi: at after disable cmd is 3
+[ 3875.160832] opencpi: restoring pci status to what it was before we were probed: 7 (after disable it was 3)
+[ 3875.160839] opencpi: at after restore cmd is 7
+[ 3875.160855] opencpi: removing minor device 0
+[ 3875.162537] opencpi: removed all our devices
+[ 3875.162548] opencpi: removed our class and device number allocations
+[ 3875.162552] opencpi: Merge: considering ffff8800ce029f60/ffffffffc0ab5810/ffffffffc0ab5810 a 0 3eda20000=0 1=0
+[ 3875.162554] opencpi: Cleanup done
+[ 3875.162556] opencpi: unloaded
+[ 4607.918506] opencpi: loading/initializing
+[ 4607.918515] opencpi: Allocating region for 5 devices
+[ 4607.918517] opencpi: adding char dev 243/0
+[ 4607.918519] opencpi: added char dev 243/0
+[ 4607.918903] opencpi: creating device in sysfs: ffff8803faa91400 kname 'ocpi=mem'
+[ 4607.918918] opencpi: pci probe
+[ 4607.918923] opencpi: at before enable cmd is 7
+[ 4607.918937] opencpi: at before request cmd is 7
+[ 4607.918943] opencpi: at before iomap cmd is 7
+[ 4607.918962] opencpi: Discovered opencpi PCI device 1 of 4, with good magic, at 0000:03:00.0
+[ 4607.918963] opencpi: adding char dev 243/1
+[ 4607.918964] opencpi: added char dev 243/1
+[ 4607.918964] opencpi: pci device name set to: nothing
+[ 4607.918999] opencpi: make_block: block ffff8803e36191e0:    4000000 @ 00000000f0000000 type(0) c(0) pid(3173) prev(ffffffffc0abd810) next(ffffffffc0abd810) refcnt(1)
+[ 4607.919001] opencpi: make_block: block ffff8803e3619240:     100000 @ 00000000f4000000 type(0) c(0) pid(3173) prev(ffffffffc0abd810) next(ffff8803e36191e0) refcnt(1)
+[ 4607.919004] opencpi: at before drvdata cmd is 7
+[ 4607.919019] opencpi: parameters (opencpi_size = -1 (0xffffffffffffffff), opencpi_memmap = (null))
+[ 4607.919021] opencpi: memory request file           (null) 20000 -> 20000
+[ 4607.919022] opencpi: couldn't get allocation in first pass
+[ 4607.919024] opencpi: make_block: block ffff8803e3619300:      20000 @ 00000003e3760000 type(2) c(0) pid(3173) prev(ffffffffc0abd810) next(ffff8803e3619240) refcnt(1)
+[ 4607.919026] opencpi: allocated kernel pages: 20000 @ 00000003e3760000
+[ 4607.919027] opencpi: requested (20000) reserved 20000 @ 00000003e3760000
+[ 4607.919028] opencpi: Using allocated kernel memory size 20000
+[ 4607.919032] opencpi: driver loaded on device (243,0)
+[16250.827773] opencpi: open file(ffff8803de598200) minor(0) initial size(0)
+[16250.828138] opencpi: release file(ffff8803de598200) inode(ffff880404a73d70) minor(0)
+[19358.106704] opencpi: open file(ffff8800ca542f00) minor(0) initial size(0)
+[19358.106726] opencpi: ioctl invalid command (00005401)
+[19358.106784] opencpi: release file(ffff8800ca542f00) inode(ffff880404a73d70) minor(0)
+[19358.106803] opencpi: open file(ffff8800ca542d00) minor(1) initial size(0)
+[19358.106811] opencpi: ioctl invalid command (00005401)
+[19358.106911] opencpi: release file(ffff8800ca542d00) inode(ffff880404a73ac8) minor(1)
+[19397.455583] opencpi: open file(ffff8803e62d1f00) minor(1) initial size(68157440)
+[19397.455604] opencpi: ioctl invalid command (00005401)
+[19397.455904] opencpi: release file(ffff8803e62d1f00) inode(ffff880404a73ac8) minor(1)

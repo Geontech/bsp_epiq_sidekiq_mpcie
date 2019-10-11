@@ -1,0 +1,51 @@
+
+$ ocpidriver unload
+The driver module was successfully unloaded.
+
+$ ocpidriver load
+Found generic reserved DMA memory on the linux boot command line and assuming it is for OpenCPI: [memmap=128M$0xc1f4a000]
+Driver loaded successfully.
+
+$ dmesg | grep opencpi
+[   83.854388] opencpi: loading out-of-tree module taints kernel.
+[   83.854735] opencpi: module verification failed: signature and/or required key missing - tainting kernel
+[   83.855621] opencpi: loading/initializing
+[   83.855648] opencpi: Allocating region for 5 devices
+[   83.855652] opencpi: adding char dev 241/0
+[   83.855656] opencpi: added char dev 241/0
+[   83.856310] opencpi: creating device in sysfs: ffff8ada30f39c00 kname 'ocpi=mem'
+[   83.856334] opencpi: pci probe
+[   83.856340] opencpi: at before enable cmd is 7
+[   83.856357] opencpi: at before request cmd is 7
+[   83.856364] opencpi: at before iomap cmd is 7
+[   83.856389] opencpi: Discovered opencpi PCI device 1 of 4, with good magic, at 0000:03:00.0 vendor 10ee device 4243 class 50000 subvendor 10ee subdevice 7
+[   83.856393] opencpi: adding char dev 241/1
+[   83.856395] opencpi: added char dev 241/1
+[   83.856396] opencpi: pci device name set to: nothing
+[   83.856482] opencpi: make_block: block ffff8ad70e8fa000:    4000000 @ 00000000f0000000 type(0) c(0) pid(6314) prev(ffffffffc0dfb830) next(ffffffffc0dfb830) refcnt(1)
+[   83.856486] opencpi: make_block: block ffff8ad70e8fa280:     100000 @ 00000000f4000000 type(0) c(0) pid(6314) prev(ffffffffc0dfb830) next(ffff8ad70e8fa000) refcnt(1)
+[   83.856492] opencpi: at before drvdata cmd is 7
+[   83.856541] opencpi: parameters (opencpi_size = -1 (0xffffffffffffffff), opencpi_memmap = 128M$0xc1f4a000)
+[   83.856547] opencpi: make_block: block ffff8ad70e8fac00:    8000000 @ 00000000c1f4a000 type(1) c(0) pid(6314) prev(ffffffffc0dfb830) next(ffff8ad70e8fa280) refcnt(1)
+[   83.856549] opencpi: Using reserved memory 8000000 @ c1f4a000
+[   83.856556] opencpi: driver loaded on device (241,0)
+[  125.859889] opencpi: open file(ffff8ada207e6700) minor(1) initial size(0)
+[  125.859911] opencpi: mmap minor 1 file ffff8ada207e6700 dev ffff8ada346aea80, 4000000 @ 00007fea15144000 (0000000000000000 to 0000000004000000)
+[  125.859913] opencpi: bar0 mapping
+[  125.859920] opencpi: mmap: block ffff8ad70e8fa000:    4000000 @ 00000000f0000000 type(0) c(0) pid(6314) prev(ffff8ad70e8fa280) next(ffffffffc0dfb830) refcnt(1)
+[  125.860257] opencpi: vma_open: vma ffff8ad70a85e5e8 size 67108864 @ offset 0000000000000000
+[  125.860266] opencpi: vma_open:: block ffff8ad70e8fa000:    4000000 @ 00000000f0000000 type(0) c(0) pid(6314) prev(ffff8ad70e8fa280) next(ffffffffc0dfb830) refcnt(2)
+[  125.860270] opencpi: file mmap using 4000000 @ 0000000000000000
+[  125.860284] opencpi: mmap minor 1 file ffff8ada207e6700 dev ffff8ada346aea80, 100000 @ 00007fea1b265000 (0000000004000000 to 0000000004100000)
+[  125.860287] opencpi: bar1 mapping
+[  125.860294] opencpi: mmap: block ffff8ad70e8fa280:     100000 @ 00000000f4000000 type(0) c(0) pid(6314) prev(ffff8ad70e8fac00) next(ffff8ad70e8fa000) refcnt(1)
+[  125.860309] opencpi: vma_open: vma ffff8ad70a85e798 size 1048576 @ offset 0000000004000000
+[  125.860315] opencpi: vma_open:: block ffff8ad70e8fa280:     100000 @ 00000000f4000000 type(0) c(0) pid(6314) prev(ffff8ad70e8fac00) next(ffff8ad70e8fa000) refcnt(2)
+[  125.860319] opencpi: file mmap using 100000 @ 0000000004000000
+[  125.863176] opencpi: vma close ffff8ad70a85e5e8 block ffff8ad70e8fa000 count 2: 4000000 @ 0000000000000000
+[  125.863185] opencpi: release_block: block ffff8ad70e8fa000:    4000000 @ 00000000f0000000 type(0) c(0) pid(6314) prev(ffff8ad70e8fa280) next(ffffffffc0dfb830) refcnt(2)
+[  125.863197] opencpi: vma close ffff8ad70a85e798 block ffff8ad70e8fa280 count 2: 100000 @ 0000000004000000
+[  125.863203] opencpi: release_block: block ffff8ad70e8fa280:     100000 @ 00000000f4000000 type(0) c(0) pid(6314) prev(ffff8ad70e8fac00) next(ffff8ad70e8fa000) refcnt(2)
+[  125.863229] opencpi: release file(ffff8ada207e6700) inode(ffff8ad70c4ba038) minor(1)
+[  135.780578] opencpi: open file(ffff8ad711070000) minor(1) initial size(68157440)
+[  135.780597] opencpi: mmap minor 1 file ffff8ad711070000 dev ffff8ada346aea80, 4000000 @ 00007fe6f545e000 (0000000000000000 to 0000000004000000)

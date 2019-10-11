@@ -1,0 +1,5 @@
+- Per Sidekiq FPGA Manual/section 8.3, attempted to reprogram FPGA with their test_app. Had to build prog_fpga app:
+
+$ cd ../sidekiq_sdk_v4.2.2/test_app/
+$ BUILD_CONFIG=x86_64.gcc make
+$ ll test_app/bin/prog_fpga

@@ -1,0 +1,64 @@
+
+$ ocpirun -v -d -t 1 testbias.xml
+Available containers are:  0: PCI:0000:03:00.0 [model: hdl os:  platform: mpcie], 1: rcc0 [model: rcc os: linux platform: centos7]
+Actual deployment is:
+ Instance  0 file_read (spec ocpi.file_read) on rcc container rcc0, using file_read in /home/user/ocpi/opencpi_q2_mpcie_sdp_son/exports/lib/components/rcc/linux-c7-x86_64/file_read_s.so dated Thu Jul 19 21:39:16 2018
+ Instance  1 bias (spec ocpi.bias) on hdl container PCI:0000:03:00.0, using bias_vhdl/a/bias_vhdl in /home/user/ocpi/bsp_sidekiq_mpcie_sdp_son/hdl/assemblies/testbias/container-testbias_mpcie_base/target-spartan6/testbias_mpcie_base.bit.gz dated Wed Jul 18 23:55:20 2018
+ Instance  2 file_write (spec ocpi.file_write) on rcc container rcc0, using file_write in /home/user/ocpi/opencpi_q2_mpcie_sdp_son/exports/lib/components/rcc/linux-c7-x86_64/file_write_s.so dated Thu Jul 19 21:39:17 2018
+Application XML parsed and deployments (containers and implementations) chosen
+Exiting for exception: Can't allocate memory size 104857600 for DMA memory
+
+Must configure memmap!!!
+
+$ dmesg | grep BIOS
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009d7ff] usable
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x00000000c1f52fff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000c1f5a000-0x00000000d5a82fff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000d5fff000-0x00000000d5ffffff] usable
+[    0.000000] BIOS-e820: [mem 0x0000000100000000-0x000000041fdfffff] usable
+
+c1f52fff - 8fff = c1f4a000
+
+$ sudo grubby --update-kernel=ALL --args=memmap='128M\\$0xc1f4a000'
+$ sudo grubby --info $(sudo grubby --default-kernel)
+index=1
+kernel=/boot/vmlinuz-3.10.0-693.5.2.el7.x86_64
+args="ro crashkernel=auto rd.lvm.lv=centos/root rd.lvm.lv=centos/swap rhgb quiet LANG=en_US.UTF-8 memmap=128M\$0xd5a7a000"
+root=/dev/mapper/centos-root
+initrd=/boot/initramfs-3.10.0-693.5.2.el7.x86_64.img
+title=CentOS Linux (3.10.0-693.5.2.el7.x86_64) 7 (Core)
+
+$ sudo grubby --update-kernel=ALL --remove-args=memmap
+
+$ ocpidriver load
+$ dmesg | grep opencpi
+[  143.240916] opencpi: loading out-of-tree module taints kernel.
+[  143.240987] opencpi: module verification failed: signature and/or required key missing - tainting kernel
+[  143.241524] opencpi: loading/initializing
+[  143.241542] opencpi: Allocating region for 5 devices
+[  143.241546] opencpi: adding char dev 243/0
+[  143.241549] opencpi: added char dev 243/0
+[  143.242361] opencpi: creating device in sysfs: ffff8800cee84c00 kname 'ocpi=mem'
+[  143.242396] opencpi: pci probe
+[  143.242402] opencpi: at before enable cmd is 7
+[  143.242419] opencpi: at before request cmd is 7
+[  143.242425] opencpi: at before iomap cmd is 7
+[  143.242452] opencpi: Discovered opencpi PCI device 1 of 4, with good magic, at 0000:03:00.0
+[  143.242454] opencpi: adding char dev 243/1
+[  143.242455] opencpi: added char dev 243/1
+[  143.242457] opencpi: pci device name set to: nothing
+[  143.242518] opencpi: make_block: block ffff8803f0a17b40:    4000000 @ 00000000f0000000 type(0) c(0) pid(2165) prev(ffffffffc0abd810) next(ffffffffc0abd810) refcnt(1)
+[  143.242522] opencpi: make_block: block ffff8803f0a17ba0:     100000 @ 00000000f4000000 type(0) c(0) pid(2165) prev(ffffffffc0abd810) next(ffff8803f0a17b40) refcnt(1)
+[  143.242526] opencpi: at before drvdata cmd is 7
+[  143.242549] opencpi: parameters (opencpi_size = -1 (0xffffffffffffffff), opencpi_memmap = 128M$0xc1f4a000)
+[  143.242553] opencpi: make_block: block ffff8803f0a17c00:    8000000 @ 00000000c1f4a000 type(1) c(0) pid(2165) prev(ffffffffc0abd810) next(ffff8803f0a17ba0) refcnt(1)
+[  143.242556] opencpi: Using reserved memory 8000000 @ c1f4a000
+[  143.242562] opencpi: driver loaded on device (243,0)
+
+$ ll /dev/ocpi*
+crw-rw-rw-. 1 root root 243, 0 Oct  2 20:32 /dev/ocpi=mem
+crw-rw-rw-. 1 root root 243, 1 Oct  2 20:32 /dev/ocpi=p=0000:03:00.0
+/dev/ocpi:
+total 0
+lrwxrwxrwx. 1 root root 11 Oct  2 20:32 mem -> ../ocpi=mem
+drwxr-xr-x. 2 root root 60 Oct  2 20:32 pci

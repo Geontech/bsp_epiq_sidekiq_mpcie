@@ -1,0 +1,26 @@
+/home/user/sidekiq_sdk_v4.4.0/test_apps/bin/version_test
+
+* libsidekiq v4.4.0
+***********************************************************
+***********************************************************
+* Sidekiq Card 0
+  Card
+    accelerometer present: true
+    part type: mPCIe
+    part info: ES004202-C0-00
+    serial: 30146
+    xport: USB
+  FPGA
+    version: 0.0.0
+    git hash: 0x0000
+    build date (yymmddhh): 0000
+    tx fifo size: unknown
+  FW
+    version: 2.7
+  RF
+    reference clock: external
+    reference clock frequency: 40000000 Hz
+    fixed port: true
+    tdd port: false
+
+version_test[3015]: <INFO> unlocking card 0

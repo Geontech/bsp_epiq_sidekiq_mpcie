@@ -1,0 +1,51 @@
+
+- Attempted to update 'complete' but since 'sidekiq' user was not created, then it failed.
+
+[user@dewey-nuc SidekiqUpdate_v4.4.0_20180220]$ sudo ./install_sidekiq_complete_for_v4.4.0_20180220_x86.sh
+
+[sudo] password for user:
+Verifying archive integrity... All good.
+Uncompressing Sidekiq Complete Installation (v4.4.0) from February 20, 2018 for x86  100% 
+Specify username: [press 'enter' for sidekiq]
+Error: user 'sidekiq' does not exist, bailing
+
+- Created a user named 'sidekiq'
+$ su -
+$ useradd sidekiq
+password: sidekiq
+
+
+[user@dewey-nuc SidekiqUpdate_v4.4.0_20180220]$ sudo ./install_sidekiq_runtime_v4.4.0_20180220_x86.sh
+
+Verifying archive integrity... All good.
+Uncompressing Sidekiq v4.4.0 Runtime Installer from February 20, 2018 for x86  100% 
+Specify username: [press 'enter' for sidekiq]
+Specify directory to install to: [press 'enter' for /home/sidekiq]
+Sidekiq run-time installer using the following configuration:
+    user: sidekiq
+    group: sidekiq
+    home: /home/sidekiq
+Updating rc.local
+Updating Sidekiq initialization
+Adding Sidekiq rules as /etc/udev/rules.d/99-sidekiq.rules
+Attempting to trigger udev
+Adding realtime priorities for user 'sidekiq' in /etc/security/limits.d/99-sidekiq_limits.conf
+Adding bash completion script '/etc/bash_completion.d/sidekiq'
+Installing image
+Updating the sidekiq_image_current symbolic link
+Extracting the pre-built test apps
+Installing Epiq shared libraries
+rpm: only installation and upgrading may be forced
+Preparing...                          ################################# [100%]
+Updating / installing...
+   1:sidekiq-shared-libs-x86_64.gcc-4.################################# [100%]
+user: Kernel modules with version 3.10.0-693.5.2.el7.x86_64 not found! Contact Epiq Solutions for driver support
+Warning: Kernel drivers failed to load
+
+Warning: Access to Sidekiq card will be limited without a DMA driver.
+         If there is a need for a specific kernel version that was not
+         included in the system update, contact Epiq Solutions support
+         at http://epiqsolutions.com/support/
+
+
+Sidekiq run-time installation complete

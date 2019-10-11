@@ -1,0 +1,64 @@
+
+Manually load FPGA using Epiq utility:
+
+./store_user_fpga -c 0 -s /home/user/ocpi/bsp_sidekiq_mpcie_sdp_son_dev1_5/hdl/assemblies/tb_bias_v2/container-tb_bias_v2_mpcie_base/target-spartan6/tb_bias_v2_mpcie_base.bit --reload -v
+
+SKIQ[24139]: <INFO> libsidekiq v4.4.0 (gdadc7321)
+SKIQ[24139]: <INFO> Need to perform full initialization
+SKIQ[24139]: <INFO> Performing initialization/detection of cards
+SKIQ[24139]: <INFO> Initialization/card detection completed successfully!
+SKIQ[24139]: <INFO> Preliminary initialization complete, continue full initialization
+store_user_fpga[24139]: <INFO> Sidekiq card 0 is serial number=30146, hardware MPCIE C (rev 2), product SKIQ-MPCIE-001 (mPCIe) (part ES004202-C0-00)
+store_user_fpga[24139]: <INFO> Sidekiq card 0 firmware v2.7
+store_user_fpga[24139]: <INFO> Sidekiq card 0 FPGA v0.0, (date 0, FIFO size unknown)
+store_user_fpga[24139]: <INFO> Sidekiq card 0 is configured for an external 40000000 Hz reference clock
+store_user_fpga[24139]: <DEBUG> erase flash sector 0x200000
+store_user_fpga[24139]: <DEBUG> erase flash sector 0x210000
+store_user_fpga[24139]: <DEBUG> erase flash sector 0x220000
+store_user_fpga[24139]: <DEBUG> erase flash sector 0x230000
+store_user_fpga[24139]: <DEBUG> erase flash sector 0x240000
+store_user_fpga[24139]: <DEBUG> erase flash sector 0x250000
+store_user_fpga[24139]: <DEBUG> erase flash sector 0x260000
+store_user_fpga[24139]: <DEBUG> erase flash sector 0x270000
+store_user_fpga[24139]: <DEBUG> erase flash sector 0x280000
+store_user_fpga[24139]: <DEBUG> erase flash sector 0x290000
+store_user_fpga[24139]: <DEBUG> erase flash sector 0x2a0000
+store_user_fpga[24139]: <DEBUG> erase flash sector 0x2b0000
+store_user_fpga[24139]: <DEBUG> erase flash sector 0x2c0000
+store_user_fpga[24139]: <DEBUG> erase flash sector 0x2d0000
+store_user_fpga[24139]: <DEBUG> erase flash sector 0x2e0000
+store_user_fpga[24139]: <DEBUG> erase flash sector 0x2f0000
+store_user_fpga[24139]: <DEBUG> erase flash sector 0x300000
+store_user_fpga[24139]: <DEBUG> erase flash sector 0x310000
+store_user_fpga[24139]: <DEBUG> erase flash sector 0x320000
+store_user_fpga[24139]: <DEBUG> erase flash sector 0x330000
+store_user_fpga[24139]: <DEBUG> erase flash sector 0x340000
+store_user_fpga[24139]: <DEBUG> erase flash sector 0x350000
+store_user_fpga[24139]: <DEBUG> erase flash sector 0x360000
+store_user_fpga[24139]: <DEBUG> write flash sector 0x200000
+store_user_fpga[24139]: <DEBUG> write flash sector 0x210000
+store_user_fpga[24139]: <DEBUG> write flash sector 0x220000
+store_user_fpga[24139]: <DEBUG> write flash sector 0x230000
+store_user_fpga[24139]: <DEBUG> write flash sector 0x240000
+store_user_fpga[24139]: <DEBUG> write flash sector 0x250000
+store_user_fpga[24139]: <DEBUG> write flash sector 0x260000
+store_user_fpga[24139]: <DEBUG> write flash sector 0x270000
+store_user_fpga[24139]: <DEBUG> write flash sector 0x280000
+store_user_fpga[24139]: <DEBUG> write flash sector 0x290000
+store_user_fpga[24139]: <DEBUG> write flash sector 0x2a0000
+store_user_fpga[24139]: <DEBUG> write flash sector 0x2b0000
+store_user_fpga[24139]: <DEBUG> write flash sector 0x2c0000
+store_user_fpga[24139]: <DEBUG> write flash sector 0x2d0000
+store_user_fpga[24139]: <DEBUG> write flash sector 0x2e0000
+store_user_fpga[24139]: <DEBUG> write flash sector 0x2f0000
+store_user_fpga[24139]: <DEBUG> write flash sector 0x300000
+store_user_fpga[24139]: <DEBUG> write flash sector 0x310000
+store_user_fpga[24139]: <DEBUG> write flash sector 0x320000
+store_user_fpga[24139]: <DEBUG> write flash sector 0x330000
+store_user_fpga[24139]: <DEBUG> write flash sector 0x340000
+store_user_fpga[24139]: <DEBUG> write flash sector 0x350000
+store_user_fpga[24139]: <DEBUG> write flash sector 0x360000
+Info: skiq_save_fpga_config_to_flash returned 0
+Info: reloading FPGA from flash
+store_user_fpga[24139]: <INFO> Sidekiq card 0 FPGA v0.0, (date 0, FIFO size unknown)
+store_user_fpga[24139]: <INFO> unlocking card 0
