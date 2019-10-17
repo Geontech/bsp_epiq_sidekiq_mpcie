@@ -22,8 +22,9 @@ $ git clone https://github.com/Geontech/bsp_epiq_sidekiq_mpcie.git
 $ git checkout release_1.5
 ```
 
-3. Setup terminal for OpenCPI environment
-REQUIRED for each terminal where OpenCPI is to be used!
+3. Setup terminal(s) for OpenCPI environment
+   - REQUIRED for each terminal where OpenCPI is to be used!
+   - Open three Terminals (A, B, C) and configure for OpenCPI
 ```
 $ cd opencpi
 $ . ./cdk/opencpi-setup.sh -r
@@ -31,39 +32,36 @@ $ export OCPI_XILINX_LICENSE_FILE=<yours>
 ```
 
 4. Build the Core and Assets projects' HDL Primitive Libraries
-Terminal A
+   - Terminal A
 ```
 $ make -C projects/core hdlprimitives HdlTargets=spartan6
 $ make -C projects/assets hdlprimitives HdlTargets=spartan6
 ```
 
 5. Build the Core and Assets projects' Workers
-Terminal B
+   - Terminal B
 ```
 $ make -C projects/core -j 5 HdlTargets=spartan6
 ```
-Terminal C
+   - Terminal C
 ```
 $ make -C projects/assets -j 5 HdlTargets=spartan6
 ```
-Allow Step 5, in Terminal B and C to complete before proceeding to the next step:
+Allow make processes in Terminal B and C to complete before proceeding to the next step.
 
-6. Build Epiq Sidekiq MiniPCIe BSP, but not Assemblies 
-In a terminal configured for OpenCPI:
+6. Build Epiq Sidekiq MiniPCIe OpenCPI BSP, but not Assemblies (In a terminal configured for OpenCPI)
 ```
 $ cd bsp_epiq_sidekiq_mpcie
 $ make Assemblies= HdlPlatform=mpcie
 ```
 
-7. Build an assembly/container (bitstream) targeting the Epiq Sidekiq MiniPCIe BSP
-In a terminal configured for OpenCPI:
+7. Build an assembly/container (bitstream) targeting the Epiq Sidekiq MiniPCIe BSP (In a terminal configured for OpenCPI)
 ```
 $ cd bsp_epiq_sidekiq_mpcie
 $ make Assemblies=tb_bias_v2 HdlPlatform=mpcie
 ```
 
-8. Execute the Applications on the Epiq Sidekiq MiniPCIe BSP
-In a terminal configured for OpenCPI:
+8. Execute the Applications on the Epiq Sidekiq MiniPCIe BSP (In a terminal configured for OpenCPI)
 ```
 $ cd bsp_epiq_sidekiq_mpcie/applications
 $ ocpirun -v -d tb_bias_v2/tb_bias_v2.xml 
