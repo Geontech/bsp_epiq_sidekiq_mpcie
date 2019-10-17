@@ -1,67 +1,70 @@
 # bsp_epiq_sidekiq_mpcie
+OpenCPI Board Support Package (BSP) for the Epiq Solutions, Sidekiq(TM), Model:Mini PCIe
 
-Below is a simple cheatsheet. Refer to OpenCPI Installation guide for more details.
+## Hardware Platform:
+A Intel NUC (Model:D54250WYKH (w/ 16GB DDR3) was used for the development of the OpenCPI BSP.
 
-Step 1: Clone OpenCPI framework, checkout proper branch and build framework for CentOS7
-'''
+## Below is a simple cheatsheet for cloning the required repos, building and execute a Control Plane only application. Refer to OpenCPI Installation guide for more details.
+
+1. Clone OpenCPI framework, checkout proper branch and build framework for CentOS7
+```
 $ git clone https://github.com/Geontech/opencpi.git
 $ git checkout release_1.5_epiq_sidekiq
 $ ./scripts/install-opencpi.sh 
 If a build error is observed for AD9361, it may be overcome by simply re-preforming the installation:
 $ ./scripts/install-opencpi.sh 
 Ensure that the driver is built successfully and loaded.
-'''
+```
 
-Step 2: Clone BSP and checkout proper branch
-'''
+2. Clone BSP and checkout proper branch
+```
 $ git clone https://github.com/Geontech/bsp_epiq_sidekiq_mpcie.git
 $ git checkout release_1.5
-'''
+```
 
-Step 3: Setup terminal for OpenCPI environment
+3. Setup terminal for OpenCPI environment
 REQUIRED for each terminal where OpenCPI is to be used!
-'''
+```
 $ cd opencpi
 $ . ./cdk/opencpi-setup.sh -r
 $ export OCPI_XILINX_LICENSE_FILE=<yours>
-'''
+```
 
-Step 4: Build the Core and Assets projects' HDL Primitive Libraries
+4. Build the Core and Assets projects' HDL Primitive Libraries
 Terminal A
-'''
+```
 $ make -C projects/core hdlprimitives HdlTargets=spartan6
 $ make -C projects/assets hdlprimitives HdlTargets=spartan6
-'''
+```
 
-Step 5: Build the Core and Assets projects' Workers
+5. Build the Core and Assets projects' Workers
 Terminal B
-'''
+```
 $ make -C projects/core -j 5 HdlTargets=spartan6
-'''
+```
 Terminal C
-'''
+```
 $ make -C projects/assets -j 5 HdlTargets=spartan6
-'''
-
+```
 Allow Step 5, in Terminal B and C to complete before proceeding to the next step:
 
-Step 6: Build Epiq Sidekiq MiniPCIe BSP, but not Assemblies 
+6. Build Epiq Sidekiq MiniPCIe BSP, but not Assemblies 
 In a terminal configured for OpenCPI:
-'''
+```
 $ cd bsp_epiq_sidekiq_mpcie
 $ make Assemblies= HdlPlatform=mpcie
-'''
+```
 
-Step 7: Build an assembly/container (bitstream) targeting the Epiq Sidekiq MiniPCIe BSP
+7. Build an assembly/container (bitstream) targeting the Epiq Sidekiq MiniPCIe BSP
 In a terminal configured for OpenCPI:
-'''
+```
 $ cd bsp_epiq_sidekiq_mpcie
 $ make Assemblies=tb_bias_v2 HdlPlatform=mpcie
-'''
+```
 
-Step 8: Execute the Applications on the Epiq Sidekiq MiniPCIe BSP
+8. Execute the Applications on the Epiq Sidekiq MiniPCIe BSP
 In a terminal configured for OpenCPI:
-'''
+```
 $ cd bsp_epiq_sidekiq_mpcie/applications
 $ ocpirun -v -d tb_bias_v2/tb_bias_v2.xml 
 Warning: for property "", the "readable" attribute is deprecated: all properties are considered readable; workers can use the "readback" attribute in the OWD when required; see the CDG for details
@@ -180,4 +183,4 @@ Property 36: capture_v2.metaFull = "false"
 Property 37: capture_v2.dataFull = "false"
 Property 41: capture_v2.metadata = "{4211081220,1655369483,1655369483,1},{4227858440,1655369655,1655369612,1},{4244635660,1655369827,1655369741,1},{4261412880,1655370042,1655369913,1},{4278190100,1655370299,1655370128,1},{0,1655370342,1655370342,1},{0}"
 Property 42: capture_v2.data = "16909060,16909060,16909061,16909060,16909061,16909062,16909060,16909061,16909062,16909063,16909060,16909061,16909062,16909063,16909064,0"
-'''
+```
