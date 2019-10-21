@@ -7,6 +7,9 @@ A Intel NUC (Model:D54250WYKH (w/ 16GB DDR3) was used for the development of the
 ## Epiq Solution SDK version:
 sidekiq_sdk_v4.4.0
 
+## FPGA Tools Vendor/Version/License:
+Xilinx ISE 14.7, with Webpack license, is sufficient for targeting the Spartan xc6slx45t-3-csg324 on the Sidekiq Mini PCIe.
+
 ## Below is a simple cheatsheet for cloning the required repos, building and execute a Control Plane only application. Refer to OpenCPI Installation guide for more details.
 
 1. Clone OpenCPI framework, checkout proper branch and build framework for CentOS7
