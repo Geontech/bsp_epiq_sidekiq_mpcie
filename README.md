@@ -4,6 +4,9 @@ OpenCPI Board Support Package (BSP) for the Epiq Solutions, Sidekiq(TM), Model:M
 ## Hardware Platform:
 A Intel NUC (Model:D54250WYKH (w/ 16GB DDR3) was used for the development of the OpenCPI BSP.
 
+## Epiq Solution SDK version:
+sidekiq_sdk_v4.4.0
+
 ## Below is a simple cheatsheet for cloning the required repos, building and execute a Control Plane only application. Refer to OpenCPI Installation guide for more details.
 
 1. Clone OpenCPI framework, checkout proper branch and build framework for CentOS7
